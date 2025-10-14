@@ -68,6 +68,29 @@ LPI_006_Verify user should able to select incident from list of incident search 
     Verify The Incident Is Successfully Linked To The People
 
 
+LPI_007_Verify user should able to select multiple incidents from list of incident search reference
+    [Documentation]    Verify user should able to select multiple incidents from list of incident search reference
+    [Tags]    LPI_SelectMultipleIncident
+    Navigate To Dashboard Module
+    Navigate to People Dashboard Page and Verify the People data is loaded
+    Click On People To Open the Preview Page
+    Click On Link/Unlink Incident Button
+    Link Multiple Incidents To The People
+    Verify The Multiple Incidents Are Successfully Linked To The People
+
+
+LPI_013_Verify user able to view people which are linked to incident in incident preview page
+    [Documentation]    Verify user able to view people which are linked to incident again in incident preview page
+    [Tags]    LPI_VerifyInIncidentPreview
+    Navigate To Dashboard Module
+    Navigate to People Dashboard Page and Verify the People data is loaded
+    Click On People To Open the Preview Page
+    Extract the person name from people preview page
+    Navigate to Search Module and search for the Linked people incident
+    Go To Involved Entities Tab And Verify The Linked People Presence
+
+
+
 
 
 
