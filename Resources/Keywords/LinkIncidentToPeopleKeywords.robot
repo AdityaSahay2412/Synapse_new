@@ -153,7 +153,6 @@ Go to Involved Entities Tab and verify the linked people presence
     Wait Until Page Contains    ${first_name}    20    Linked person ${first_name} is not visible under Involved Entities tab.
     Wait Until Page Contains    ${last_name}    20    Linked person ${last_name} is not visible under Involved Entities tab.
     Log To Console    Linked person ${first_name} ${last_name} is visible under Involved Entities tab of the linked incident
-    Log To Console    HII
 
 
 
