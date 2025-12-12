@@ -2,9 +2,9 @@
 Documentation    this is a demo testing file
 Library    Selenium2Library
 Resource    ../WidgetExportVariables.robot
+Resource    ../LinkIncidentToPeopleVariables.robot
 #Resource    ../Variables.robot
 Resource    General.robot
-
 
 *** Keywords ***
 Open the synapse analyst url
@@ -20,6 +20,16 @@ Open the synapse analyst url
     Run Keyword If    ${element_present}    Click Element    ${LOCATOR_ALLOW_LOCATION_BUTTON}
     Wait Until Element Is Visible    ${LOCATOR_DASHBOARDS_HEADER}    15
     Page Should Contain Element    ${LOCATOR_DASHBOARDS_HEADER}
+    Handle Any Pop Ups After Login
+
+
+
+    
+Handle any pop ups after login
+    Page Should Contain Element    ${snackbar_toast_message}    10    pop up message is not visible
+    Click Element    ${Dismiss_toast_message_button}
+
+
 
 
 

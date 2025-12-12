@@ -1,119 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.3 on win32)" generated="2025-10-14T14:20:57.722420" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.3 on win32)" generated="2025-12-11T17:49:24.188846" rpa="false" schemaversion="5">
 <suite id="s1" name="LinkIncidentToPeopleTestSuite" source="C:\Users\Asus\PycharmProjects\Synapse\Tests\LinkIncidentToPeopleTestSuite.robot">
 <kw name="Open the synapse analyst url" owner="WidgetExportKeywords" type="SETUP">
 <kw name="Open Browser" owner="Selenium2Library">
-<msg time="2025-10-14T14:20:59.437621" level="INFO">Opening browser 'chrome' to base url 'https://analystuat.staging.zinc.systems/#/auth/login'.</msg>
+<msg time="2025-12-11T17:49:24.857988" level="INFO">Opening browser 'chrome' to base url 'https://analystuat.staging.zinc.systems/#/auth/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-14T14:20:59.436620" elapsed="3.079215"/>
+<status status="PASS" start="2025-12-11T17:49:24.857988" elapsed="7.113830"/>
 </kw>
 <kw name="Maximize Browser Window" owner="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-14T14:21:02.515835" elapsed="8.758147"/>
+<status status="PASS" start="2025-12-11T17:49:31.972809" elapsed="0.058843"/>
 </kw>
 <kw name="Input Text" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:11.275488" level="INFO">Typing text 'aditya.sahay+694@zinc.systems' into text field 'id:email'.</msg>
+<msg time="2025-12-11T17:49:32.032648" level="INFO">Typing text 'aditya.sahay+694@zinc.systems' into text field 'id:email'.</msg>
 <arg>${LOCATOR_EMAIL}</arg>
 <arg>${EMAIL_LOGIN}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:11.274487" elapsed="1.673468"/>
+<status status="PASS" start="2025-12-11T17:49:32.031652" elapsed="0.493680"/>
 </kw>
 <kw name="Input Password" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:12.948953" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg time="2025-10-14T14:21:13.100535" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-12-11T17:49:32.527331" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-12-11T17:49:33.151656" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${LOCATOR_PASSWORD}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:12.947955" elapsed="0.333939"/>
+<status status="PASS" start="2025-12-11T17:49:32.526334" elapsed="0.806837"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-14T14:21:14.283074" level="INFO">Slept 1 second.</msg>
+<msg time="2025-12-11T17:49:34.334230" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-14T14:21:13.282892" elapsed="1.000687"/>
+<status status="PASS" start="2025-12-11T17:49:33.333171" elapsed="1.001059"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${LOCATOR_LOGIN_BUTTON}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:14.284083" elapsed="0.306763"/>
+<status status="PASS" start="2025-12-11T17:49:34.334733" elapsed="0.031847"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:14.591842" level="INFO">Clicking element 'id:loginButton'.</msg>
+<msg time="2025-12-11T17:49:34.366580" level="INFO">Clicking element 'id:loginButton'.</msg>
 <arg>${LOCATOR_LOGIN_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:14.591842" elapsed="0.415436"/>
+<status status="PASS" start="2025-12-11T17:49:34.366580" elapsed="0.198476"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${LOCATOR_APP_LOGO}</arg>
 <arg>45</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:15.008274" elapsed="11.851947"/>
+<status status="PASS" start="2025-12-11T17:49:34.566047" elapsed="13.202110"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${LOCATOR_ALLOW_LOCATION_BUTTON}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:26.861250" elapsed="5.112697"/>
+<status status="PASS" start="2025-12-11T17:49:47.769155" elapsed="5.070919"/>
 </kw>
-<msg time="2025-10-14T14:21:31.973947" level="INFO">${element_present} = True</msg>
+<msg time="2025-12-11T17:49:52.840074" level="INFO">${element_present} = True</msg>
 <var>${element_present}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${LOCATOR_ALLOW_LOCATION_BUTTON}</arg>
 <arg>10</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-10-14T14:21:26.860221" elapsed="5.113726"/>
+<status status="PASS" start="2025-12-11T17:49:47.769155" elapsed="5.070919"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:31.974955" level="INFO">Clicking element 'id:btn-allow-location'.</msg>
+<msg time="2025-12-11T17:49:52.841078" level="INFO">Clicking element 'id:btn-allow-location'.</msg>
 <arg>${LOCATOR_ALLOW_LOCATION_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:31.974955" elapsed="0.086649"/>
+<status status="PASS" start="2025-12-11T17:49:52.841078" elapsed="0.068412"/>
 </kw>
 <arg>${element_present}</arg>
 <arg>Click Element</arg>
 <arg>${LOCATOR_ALLOW_LOCATION_BUTTON}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-14T14:21:31.973947" elapsed="0.088693"/>
+<status status="PASS" start="2025-12-11T17:49:52.840074" elapsed="0.069416"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${LOCATOR_DASHBOARDS_HEADER}</arg>
 <arg>15</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:32.062640" elapsed="0.027801"/>
+<status status="PASS" start="2025-12-11T17:49:52.909490" elapsed="0.022901"/>
 </kw>
 <kw name="Page Should Contain Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:32.098271" level="INFO">Current page contains element 'xpath://h3[contains(text(), 'Dashboards')]'.</msg>
+<msg time="2025-12-11T17:49:52.942682" level="INFO">Current page contains element 'xpath://h3[contains(text(), 'Dashboards')]'.</msg>
 <arg>${LOCATOR_DASHBOARDS_HEADER}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-10-14T14:21:32.090441" elapsed="0.007830"/>
+<status status="PASS" start="2025-12-11T17:49:52.932391" elapsed="0.010291"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:20:59.434619" elapsed="32.663652"/>
+<kw name="Handle any pop ups after login" owner="WidgetExportKeywords">
+<kw name="Page Should Contain Element" owner="Selenium2Library">
+<msg time="2025-12-11T17:49:52.956365" level="INFO">Current page contains element 'xpath://span[@class='mat-simple-snack-bar-content']'.</msg>
+<arg>${snackbar_toast_message}</arg>
+<arg>10</arg>
+<arg>pop up message is not visible</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-12-11T17:49:52.942682" elapsed="0.013683"/>
 </kw>
-<test id="s1-t1" name="LPI_013_Verify user able to view people which are linked to incident in incident preview page" line="82">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2025-12-11T17:49:52.956365" level="INFO">Clicking element 'xpath://button[@class='mat-focus-indicator mat-button mat-button-base']/child::span[text()='Dismiss']'.</msg>
+<arg>${Dismiss_toast_message_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-11T17:49:52.956365" elapsed="0.087487"/>
+</kw>
+<status status="PASS" start="2025-12-11T17:49:52.942682" elapsed="0.101170"/>
+</kw>
+<status status="PASS" start="2025-12-11T17:49:24.856957" elapsed="28.186895"/>
+</kw>
+<test id="s1-t1" name="LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page" line="248">
 <kw name="Go To Home Page" owner="General" type="SETUP">
 <kw name="Set Selenium Implicit Wait" owner="Selenium2Library">
 <arg>1</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-10-14T14:21:32.103780" elapsed="0.001043"/>
+<status status="PASS" start="2025-12-11T17:49:53.044817" elapsed="0.000997"/>
 </kw>
 <kw name="Press Keys" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:32.105879" level="INFO">Sending key(s) ('ESC',) to page.</msg>
-<msg time="2025-10-14T14:21:32.105879" level="INFO">Pressing special key ESCAPE to browser.</msg>
-<msg time="2025-10-14T14:21:32.105879" level="INFO">Releasing special key ESCAPE.</msg>
+<msg time="2025-12-11T17:49:53.046813" level="INFO">Sending key(s) ('ESC',) to page.</msg>
+<msg time="2025-12-11T17:49:53.046813" level="INFO">Pressing special key ESCAPE to browser.</msg>
+<msg time="2025-12-11T17:49:53.046813" level="INFO">Releasing special key ESCAPE.</msg>
 <arg>None</arg>
 <arg>ESC</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-10-14T14:21:32.104823" elapsed="0.016414"/>
+<status status="PASS" start="2025-12-11T17:49:53.046813" elapsed="0.012989"/>
 </kw>
 <kw name="Start Test Case Recording" owner="General">
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Import Library" owner="BuiltIn">
-<msg time="2025-10-14T14:21:32.127856" level="FAIL">Importing library 'ScreenCapLibrary' failed: ModuleNotFoundError: No module named 'ScreenCapLibrary'
+<msg time="2025-12-11T17:49:53.063794" level="FAIL">Importing library 'ScreenCapLibrary' failed: ModuleNotFoundError: No module named 'ScreenCapLibrary'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -126,7 +143,7 @@ PYTHONPATH:
   C:\Python311\Lib\site-packages\vboxapi-1.0-py3.11.egg</msg>
 <arg>ScreenCapLibrary</arg>
 <doc>Imports a library with the given name and optional arguments.</doc>
-<status status="FAIL" start="2025-10-14T14:21:32.122233" elapsed="0.005623">Importing library 'ScreenCapLibrary' failed: ModuleNotFoundError: No module named 'ScreenCapLibrary'
+<status status="FAIL" start="2025-12-11T17:49:53.060801" elapsed="0.003987">Importing library 'ScreenCapLibrary' failed: ModuleNotFoundError: No module named 'ScreenCapLibrary'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -141,7 +158,7 @@ PYTHONPATH:
 <arg>Import Library</arg>
 <arg>ScreenCapLibrary</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-14T14:21:32.122233" elapsed="0.006623"/>
+<status status="PASS" start="2025-12-11T17:49:53.059802" elapsed="0.004986"/>
 </kw>
 <arg>'${USE_PYGTK}'=='True'</arg>
 <arg>run keyword and ignore error</arg>
@@ -153,25 +170,25 @@ PYTHONPATH:
 <arg>Import Library</arg>
 <arg>ScreenCapLibrary</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-14T14:21:32.122233" elapsed="0.006623"/>
+<status status="PASS" start="2025-12-11T17:49:53.059802" elapsed="0.004986"/>
 </kw>
 <kw name="Get Current Date" owner="DateTime">
-<msg time="2025-10-14T14:21:32.129852" level="INFO">${Current_Time} = 10_14_14_21_32</msg>
+<msg time="2025-12-11T17:49:53.065785" level="INFO">${Current_Time} = 12_11_17_49_53</msg>
 <var>${Current_Time}</var>
 <arg>result_format=%m_%d_%H_%M_%S</arg>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<status status="PASS" start="2025-10-14T14:21:32.128856" elapsed="0.000996"/>
+<status status="PASS" start="2025-12-11T17:49:53.064788" elapsed="0.000997"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-10-14T14:21:32.130856" level="INFO">${recording_file} = LPI_013_Verify user able to view people which are linked to incident in incident preview page_10_14_14_21_32</msg>
+<msg time="2025-12-11T17:49:53.065785" level="INFO">${recording_file} = LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_11_17_49_53</msg>
 <var>${recording_file}</var>
 <arg>${TEST NAME}_${Current_Time}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-10-14T14:21:32.130856" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-11T17:49:53.065785" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="start video recording">
-<msg time="2025-10-14T14:21:32.139891" level="FAIL">No keyword with name 'start video recording' found.</msg>
+<msg time="2025-12-11T17:49:53.073774" level="FAIL">No keyword with name 'start video recording' found.</msg>
 <arg>alias=None</arg>
 <arg>name=${recording_file}</arg>
 <arg>fps=None</arg>
@@ -179,7 +196,7 @@ PYTHONPATH:
 <arg>embed=True</arg>
 <arg>embed_width='800px'</arg>
 <arg>monitor=0</arg>
-<status status="FAIL" start="2025-10-14T14:21:32.139891" elapsed="0.000000">No keyword with name 'start video recording' found.</status>
+<status status="FAIL" start="2025-12-11T17:49:53.073774" elapsed="0.000000">No keyword with name 'start video recording' found.</status>
 </kw>
 <arg>start video recording</arg>
 <arg>alias=None</arg>
@@ -190,122 +207,108 @@ PYTHONPATH:
 <arg>embed_width='800px'</arg>
 <arg>monitor=0</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-14T14:21:32.131849" elapsed="0.008042"/>
+<status status="PASS" start="2025-12-11T17:49:53.065785" elapsed="0.007989"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2025-10-14T14:21:32.140888" level="INFO">${recording_file} = LPI_013_Verify user able to view people which are linked to incident in incident preview page_10_14_14_21_32</msg>
-<msg time="2025-10-14T14:21:32.140888" level="INFO">${recording_file} = None</msg>
+<msg time="2025-12-11T17:49:53.073774" level="INFO">${recording_file} = LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_11_17_49_53</msg>
+<msg time="2025-12-11T17:49:53.073774" level="INFO">${recording_file} = None</msg>
 <var>${recording_file}</var>
 <arg>${recording_file}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2025-10-14T14:21:32.140888" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-11T17:49:53.073774" elapsed="0.000995"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:21:32.122233" elapsed="0.018655"/>
+<status status="PASS" start="2025-12-11T17:49:53.059802" elapsed="0.014967"/>
 </kw>
 <kw name="Go To" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:32.147536" level="INFO">Opening url 'https://analystuat.staging.zinc.systems/#/analyst/dashboard'</msg>
+<msg time="2025-12-11T17:49:53.081752" level="INFO">Opening url 'https://analystuat.staging.zinc.systems/#/analyst/dashboard'</msg>
 <arg>${DASHBOARD_PAGE_URL.${env}}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-14T14:21:32.140888" elapsed="0.021141"/>
+<status status="PASS" start="2025-12-11T17:49:53.074769" elapsed="0.015926"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:35.062658" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8050.png"&gt;&lt;img src="selenium-screenshot-8050.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-14T14:21:35.063622" level="FAIL">Element with locator 'id=btn-slide-out-close' not found.</msg>
+<msg time="2025-12-11T17:49:55.139133" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8435.png"&gt;&lt;img src="selenium-screenshot-8435.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-11T17:49:55.139133" level="FAIL">Element with locator 'id=btn-slide-out-close' not found.</msg>
 <arg>${DASHBOARD_CLOSE_BUTTON}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-10-14T14:21:32.163027" elapsed="2.985447">Element with locator 'id=btn-slide-out-close' not found.</status>
+<status status="FAIL" start="2025-12-11T17:49:53.091693" elapsed="2.054541">Element with locator 'id=btn-slide-out-close' not found.</status>
 </kw>
-<msg time="2025-10-14T14:21:35.148474" level="INFO">${status} = False</msg>
+<msg time="2025-12-11T17:49:55.146234" level="INFO">${status} = False</msg>
 <var>${status}</var>
 <arg>element should be visible</arg>
 <arg>${DASHBOARD_CLOSE_BUTTON}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-10-14T14:21:32.163027" elapsed="2.985447"/>
+<status status="PASS" start="2025-12-11T17:49:53.090695" elapsed="2.055539"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${status}'=='True'</arg>
 <arg>Execute JavaScript</arg>
 <arg>document.evaluate("//*[@id='btn-slide-out-close']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-14T14:21:35.148474" elapsed="0.001003"/>
+<status status="PASS" start="2025-12-11T17:49:55.146234" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:39.376163" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8051.png"&gt;&lt;img src="selenium-screenshot-8051.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-14T14:21:39.376163" level="FAIL">Element with locator 'xpath=//button[normalize-space()='Discard']' not found.</msg>
+<msg time="2025-12-11T17:49:57.015259" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8436.png"&gt;&lt;img src="selenium-screenshot-8436.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-11T17:49:57.015259" level="FAIL">Element with locator 'xpath=//button[normalize-space()='Discard']' not found.</msg>
 <arg>${DISCARD_BUTTON}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-10-14T14:21:35.149477" elapsed="4.227686">Element with locator 'xpath=//button[normalize-space()='Discard']' not found.</status>
+<status status="FAIL" start="2025-12-11T17:49:55.147236" elapsed="1.869021">Element with locator 'xpath=//button[normalize-space()='Discard']' not found.</status>
 </kw>
-<msg time="2025-10-14T14:21:39.377163" level="INFO">${dstatus} = False</msg>
+<msg time="2025-12-11T17:49:57.016257" level="INFO">${dstatus} = False</msg>
 <var>${dstatus}</var>
 <arg>element should be visible</arg>
 <arg>${DISCARD_BUTTON}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-10-14T14:21:35.149477" elapsed="4.227686"/>
+<status status="PASS" start="2025-12-11T17:49:55.147236" elapsed="1.869021"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${dstatus}'=='True'</arg>
 <arg>Execute JavaScript</arg>
 <arg>document.evaluate("//button[normalize-space()='Discard']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-14T14:21:39.377163" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-11T17:49:57.016257" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:41.224472" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8052.png"&gt;&lt;img src="selenium-screenshot-8052.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-14T14:21:41.224472" level="FAIL">Element with locator 'xpath=//button[text()='Yes, Leave']' not found.</msg>
+<msg time="2025-12-11T17:49:59.748883" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8437.png"&gt;&lt;img src="selenium-screenshot-8437.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-11T17:49:59.748883" level="FAIL">Element with locator 'xpath=//button[text()='Yes, Leave']' not found.</msg>
 <arg>${YES_LEAVE_OPTION}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-10-14T14:21:39.378160" elapsed="1.847312">Element with locator 'xpath=//button[text()='Yes, Leave']' not found.</status>
+<status status="FAIL" start="2025-12-11T17:49:57.017288" elapsed="2.732592">Element with locator 'xpath=//button[text()='Yes, Leave']' not found.</status>
 </kw>
-<msg time="2025-10-14T14:21:41.225472" level="INFO">${dstatus} = False</msg>
+<msg time="2025-12-11T17:49:59.749880" level="INFO">${dstatus} = False</msg>
 <var>${dstatus}</var>
 <arg>element should be visible</arg>
 <arg>${YES_LEAVE_OPTION}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-10-14T14:21:39.378160" elapsed="1.847312"/>
+<status status="PASS" start="2025-12-11T17:49:57.017288" elapsed="2.732592"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${dstatus}'=='True'</arg>
 <arg>Execute JavaScript</arg>
 <arg>document.evaluate("//button[text()='Yes, Leave']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-14T14:21:41.225472" elapsed="0.001001"/>
+<status status="PASS" start="2025-12-11T17:49:59.749880" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${DASHBOARD_HEADER}</arg>
 <arg>30</arg>
 <arg>Failed to go to dashboard page after 30 secs</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:41.226473" elapsed="0.064881"/>
+<status status="PASS" start="2025-12-11T17:49:59.750877" elapsed="0.031915"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="Selenium2Library">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-10-14T14:21:41.292346" elapsed="0.001510"/>
+<status status="PASS" start="2025-12-11T17:49:59.782792" elapsed="0.001996"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:42.241781" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8053.png"&gt;&lt;img src="selenium-screenshot-8053.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-11T17:50:00.524806" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8438.png"&gt;&lt;img src="selenium-screenshot-8438.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-14T14:21:41.293856" elapsed="0.947925"/>
+<status status="PASS" start="2025-12-11T17:49:59.785790" elapsed="0.739016"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:21:32.102262" elapsed="10.140515"/>
-</kw>
-<kw name="Navigate to Dashboard Module" owner="DataComparisonKeywords">
-<kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:42.243773" level="INFO">Clicking element 'xpath://a[@id='navbar-Dashboards']'.</msg>
-<arg>${Dashboard_module}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:42.243773" elapsed="0.504670"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
-<arg>${dashboard_text_header}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:42.750444" elapsed="3.373864"/>
-</kw>
-<status status="PASS" start="2025-10-14T14:21:42.242777" elapsed="3.881531"/>
+<status status="PASS" start="2025-12-11T17:49:53.044817" elapsed="7.479989"/>
 </kw>
 <kw name="Navigate to People Dashboard Page and Verify the People data is loaded" owner="LinkIncidentToPeopleKeywords">
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
@@ -313,112 +316,113 @@ PYTHONPATH:
 <arg>15</arg>
 <arg>People dashboard page is not visible</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:46.124829" elapsed="0.035394"/>
-</kw>
-<kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:46.161221" level="INFO">Clicking element 'xpath://div[@class='mat-tooltip-trigger normal-text ng-star-inserted' and text()='people']'.</msg>
-<arg>${Peoples_dashboard_page}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:46.161221" elapsed="0.113538"/>
+<status status="PASS" start="2025-12-11T17:50:00.525804" elapsed="0.026928"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="Selenium2Library">
 <arg>${People_dashboard_page_title}</arg>
 <arg>15</arg>
 <arg>People dashboard page header is not visible</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-14T14:21:46.274759" elapsed="0.021571"/>
+<status status="PASS" start="2025-12-11T17:50:00.553730" elapsed="0.009972"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${People_widget}</arg>
 <arg>20</arg>
 <arg>People widget is not visible</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:46.296330" elapsed="0.043710"/>
+<status status="PASS" start="2025-12-11T17:50:00.564700" elapsed="0.022938"/>
 </kw>
-<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<kw name="Wait Until Page Contains Element" owner="Selenium2Library">
 <arg>${People_data}</arg>
 <arg>30</arg>
-<arg>People data was not loaded</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:46.340040" elapsed="0.037156"/>
+<arg>people data was not loaded</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-11T17:50:00.587638" elapsed="0.012966"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:21:46.124829" elapsed="0.252367"/>
+<status status="PASS" start="2025-12-11T17:50:00.525804" elapsed="0.074800"/>
 </kw>
 <kw name="Click On People To Open the Preview Page" owner="LinkIncidentToPeopleKeywords">
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:51.025711" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
 <arg>${People_data}</arg>
 <arg>30</arg>
 <arg>People data is not visible on the people dashboard page</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:46.378199" elapsed="8.450507"/>
+<status status="PASS" start="2025-12-11T17:50:00.601602" elapsed="0.019946"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:54.829736" level="INFO">Clicking element 'xpath:(//div[@class='grid-view-img ng-star-inserted'])[1]'.</msg>
+<msg time="2025-12-11T17:50:00.621548" level="INFO">Clicking element 'xpath:(//div[@class='grid-view-img ng-star-inserted'])[1]'.</msg>
 <arg>${People_data}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:54.829736" elapsed="0.193126"/>
+<status status="PASS" start="2025-12-11T17:50:00.621548" elapsed="0.073803"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="Selenium2Library">
 <arg>${People_preview_page}</arg>
 <arg>15</arg>
 <arg>People preview page is not visible</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-14T14:21:55.022862" elapsed="0.021593"/>
+<status status="PASS" start="2025-12-11T17:50:00.695351" elapsed="0.016955"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${People_name}</arg>
 <arg>10</arg>
 <arg>People name is not visible on the people preview page</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:55.045458" elapsed="3.381539"/>
+<status status="PASS" start="2025-12-11T17:50:00.712306" elapsed="2.725468"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:21:46.378199" elapsed="12.048798"/>
+<status status="PASS" start="2025-12-11T17:50:00.601602" elapsed="2.836172"/>
 </kw>
-<kw name="Extract the person name from people preview page" owner="LinkIncidentToPeopleKeywords">
+<kw name="Extract the person name which has to be unliked from people preview page" owner="LinkIncidentToPeopleKeywords">
 <kw name="Get Text" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:58.579118" level="INFO">${first_name} = Suwpct</msg>
-<var>${first_name}</var>
+<msg time="2025-12-11T17:50:03.481433" level="INFO">${unlink_people_first_name} = User</msg>
+<var>${unlink_people_first_name}</var>
 <arg>${People_first_name}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:58.428992" elapsed="0.150126"/>
+<status status="PASS" start="2025-12-11T17:50:03.439771" elapsed="0.041662"/>
 </kw>
 <kw name="Get Text" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:58.608585" level="INFO">${last_name} = Wdwhgdgyd</msg>
-<var>${last_name}</var>
+<msg time="2025-12-11T17:50:03.524036" level="INFO">${unlink_people_last_name} = Sus 2</msg>
+<var>${unlink_people_last_name}</var>
 <arg>${People_last_name}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:58.579118" elapsed="0.029467"/>
+<status status="PASS" start="2025-12-11T17:50:03.481433" elapsed="0.042603"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2025-10-14T14:21:58.608585" level="INFO">${first_name} = Suwpct</msg>
-<arg>${first_name}</arg>
-<arg>${first_name}</arg>
+<msg time="2025-12-11T17:50:03.524036" level="INFO">${unlink_people_first_name} = User</msg>
+<arg>${unlink_people_first_name}</arg>
+<arg>${unlink_people_first_name}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2025-10-14T14:21:58.608585" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-11T17:50:03.524036" elapsed="0.000000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2025-10-14T14:21:58.609585" level="INFO">${last_name} = Wdwhgdgyd</msg>
-<arg>${last_name}</arg>
-<arg>${last_name}</arg>
+<msg time="2025-12-11T17:50:03.524036" level="INFO">${unlink_people_last_name} = Sus 2</msg>
+<arg>${unlink_people_last_name}</arg>
+<arg>${unlink_people_last_name}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2025-10-14T14:21:58.609585" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-11T17:50:03.524036" elapsed="0.000995"/>
+</kw>
+<status status="PASS" start="2025-12-11T17:50:03.438773" elapsed="0.086258"/>
 </kw>
 <kw name="Click On Link/Unlink Incident Button" owner="LinkIncidentToPeopleKeywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-11T17:50:05.525532" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-11T17:50:03.525243" elapsed="2.000289"/>
+</kw>
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${Link/Unlink_button}</arg>
 <arg>10</arg>
 <arg>Link/Unlink button is not visible on the people preview page</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:58.609585" elapsed="0.027546"/>
+<status status="PASS" start="2025-12-11T17:50:05.525532" elapsed="0.024065"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:58.637131" level="INFO">Clicking element 'xpath://span[@id='spn-link-unlink-people']'.</msg>
+<msg time="2025-12-11T17:50:05.550599" level="INFO">Clicking element 'xpath://span[@id='spn-link-unlink-people']'.</msg>
 <arg>${Link/Unlink_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:58.637131" elapsed="0.236726"/>
+<status status="PASS" start="2025-12-11T17:50:05.550599" elapsed="0.190561"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:21:58.609585" elapsed="0.264272"/>
+<status status="PASS" start="2025-12-11T17:50:03.525243" elapsed="2.215917"/>
 </kw>
 <kw name="Link the incident to the people" owner="LinkIncidentToPeopleKeywords">
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
@@ -426,326 +430,401 @@ PYTHONPATH:
 <arg>10</arg>
 <arg>Incidents dropdown is not visible on the link/unlink incident on people preview page</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:21:58.876345" elapsed="0.317634"/>
+<status status="PASS" start="2025-12-11T17:50:05.743153" elapsed="0.181111"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:59.194975" level="INFO">Clicking element 'xpath://zd-select-v2[@id='select-link-incident']'.</msg>
+<msg time="2025-12-11T17:50:05.924264" level="INFO">Clicking element 'xpath://zd-select-v2[@id='select-link-incident']'.</msg>
 <arg>${Incidents_dropdown}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:59.193979" elapsed="0.262113"/>
+<status status="PASS" start="2025-12-11T17:50:05.924264" elapsed="0.150664"/>
 </kw>
 <kw name="Input Text" owner="Selenium2Library">
-<msg time="2025-10-14T14:21:59.457093" level="INFO">Typing text 'AA00' into text field 'xpath://input[@placeholder='Search']'.</msg>
+<msg time="2025-12-11T17:50:06.075924" level="INFO">Typing text 'AA00' into text field 'xpath://input[@placeholder='Search']'.</msg>
 <arg>${Incident_dropdown_search_box}</arg>
 <arg>${AA_category_incident}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:59.456092" elapsed="0.163102"/>
+<status status="PASS" start="2025-12-11T17:50:06.074928" elapsed="0.189428"/>
 </kw>
 <kw name="Get Text" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:00.307044" level="INFO">${Selected_incident_reference_number} = AA009983</msg>
+<msg time="2025-12-11T17:50:07.499875" level="INFO">${Selected_incident_reference_number} = AA009983</msg>
 <var>${Selected_incident_reference_number}</var>
 <arg>${Alarm_activations_incident_reference_number}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:21:59.619194" elapsed="0.687850"/>
+<status status="PASS" start="2025-12-11T17:50:06.264356" elapsed="1.235519"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Selected incident reference number is: ${Selected_incident_reference_number}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-14T14:22:00.307044" elapsed="0.000998"/>
+<status status="PASS" start="2025-12-11T17:50:07.499875" elapsed="0.000997"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2025-10-14T14:22:00.308042" level="INFO">${Selected_incident_reference_number} = AA009983</msg>
+<msg time="2025-12-11T17:50:07.500872" level="INFO">${Selected_incident_reference_number} = AA009983</msg>
 <arg>${Selected_incident_reference_number}</arg>
 <arg>${Selected_incident_reference_number}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2025-10-14T14:22:00.308042" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-11T17:50:07.500872" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:00.308042" level="INFO">Clicking element 'xpath:(//div[@class='zd-select-option'])[1]'.</msg>
+<msg time="2025-12-11T17:50:07.501871" level="INFO">Clicking element 'xpath:(//div[@class='zd-select-option'])[1]'.</msg>
 <arg>${Alarm_activations_incident_reference_number}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:22:00.308042" elapsed="0.112850"/>
+<status status="PASS" start="2025-12-11T17:50:07.500872" elapsed="0.092726"/>
 </kw>
 <kw name="Press Keys" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:00.421888" level="INFO">Sending key(s) ('ESC',) to page.</msg>
-<msg time="2025-10-14T14:22:00.421888" level="INFO">Pressing special key ESCAPE to browser.</msg>
-<msg time="2025-10-14T14:22:00.421888" level="INFO">Releasing special key ESCAPE.</msg>
+<msg time="2025-12-11T17:50:07.594596" level="INFO">Sending key(s) ('ESC',) to page.</msg>
+<msg time="2025-12-11T17:50:07.594596" level="INFO">Pressing special key ESCAPE to browser.</msg>
+<msg time="2025-12-11T17:50:07.594596" level="INFO">Releasing special key ESCAPE.</msg>
 <arg>${None}</arg>
 <arg>ESC</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-10-14T14:22:00.421888" elapsed="0.037324"/>
+<status status="PASS" start="2025-12-11T17:50:07.594596" elapsed="0.027926"/>
 </kw>
 <kw name="Get Text" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:00.503888" level="INFO">${Selected_incident_reference_number_shown_after_selection} = AA009983</msg>
+<msg time="2025-12-11T17:50:07.650312" level="INFO">${Selected_incident_reference_number_shown_after_selection} = AA009983</msg>
 <var>${Selected_incident_reference_number_shown_after_selection}</var>
 <arg>xpath://span[@class='mbsc-textfield-tag-text mbsc-material']</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:22:00.459212" elapsed="0.044676"/>
+<status status="PASS" start="2025-12-11T17:50:07.623518" elapsed="0.026794"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${Selected_incident_reference_number}</arg>
 <arg>${Selected_incident_reference_number_shown_after_selection}</arg>
 <arg>Selected incident reference number is not shown after selection</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-10-14T14:22:00.503888" elapsed="0.001047"/>
+<status status="PASS" start="2025-12-11T17:50:07.650312" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${Link_button}</arg>
 <arg>10</arg>
 <arg>Link button is not visible on the link/unlink incident on people preview page</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:22:00.504935" elapsed="0.054099"/>
+<status status="PASS" start="2025-12-11T17:50:07.651309" elapsed="0.024658"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:00.559034" level="INFO">Clicking element 'xpath://button[@id='btn-slide-out-confirm']'.</msg>
+<msg time="2025-12-11T17:50:07.675967" level="INFO">Clicking element 'xpath://button[@id='btn-slide-out-confirm']'.</msg>
 <arg>${Link_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:22:00.559034" elapsed="0.113123"/>
+<status status="PASS" start="2025-12-11T17:50:07.675967" elapsed="0.088857"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:02.215873" level="INFO">Current page contains text 'Event linked successfully'.</msg>
+<msg time="2025-12-11T17:50:08.803694" level="INFO">Current page contains text 'Event linked successfully'.</msg>
 <arg>${Event_linked_successfully_toast_message}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-14T14:22:00.672157" elapsed="1.543716"/>
+<status status="PASS" start="2025-12-11T17:50:07.764824" elapsed="1.038870"/>
 </kw>
 <arg>Page Should Contain</arg>
 <arg>${Event_linked_successfully_toast_message}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-10-14T14:22:00.672157" elapsed="1.543716"/>
+<status status="PASS" start="2025-12-11T17:50:07.764824" elapsed="1.038870"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:21:58.875335" elapsed="3.340538"/>
+<status status="PASS" start="2025-12-11T17:50:05.742161" elapsed="3.061533"/>
 </kw>
 <kw name="Click On Link/Unlink Incident Button" owner="LinkIncidentToPeopleKeywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-11T17:50:10.805393" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-11T17:50:08.804638" elapsed="2.000755"/>
+</kw>
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${Link/Unlink_button}</arg>
 <arg>10</arg>
 <arg>Link/Unlink button is not visible on the people preview page</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:22:02.216877" elapsed="0.023686"/>
+<status status="PASS" start="2025-12-11T17:50:10.806406" elapsed="0.045582"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:02.240563" level="INFO">Clicking element 'xpath://span[@id='spn-link-unlink-people']'.</msg>
+<msg time="2025-12-11T17:50:10.853028" level="INFO">Clicking element 'xpath://span[@id='spn-link-unlink-people']'.</msg>
 <arg>${Link/Unlink_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:22:02.240563" elapsed="0.096727"/>
+<status status="PASS" start="2025-12-11T17:50:10.851988" elapsed="0.061949"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:22:02.215873" elapsed="0.121417"/>
+<status status="PASS" start="2025-12-11T17:50:08.804638" elapsed="2.109299"/>
+</kw>
+<kw name="Unlink the incident from people(suspect) preview page" owner="LinkIncidentToPeopleKeywords">
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${first_incident_to_unlink}</arg>
+<arg>10</arg>
+<arg>Incident to unlink is not visible on the link/unlink incident on people preview page</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-11T17:50:10.914742" elapsed="0.699051"/>
 </kw>
 <kw name="Get Text" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:03.037001" level="INFO">${extracted_incident_reference} = AA009983</msg>
-<var>${extracted_incident_reference}</var>
-<arg>${incident_reference}</arg>
+<msg time="2025-12-11T17:50:11.635471" level="INFO">${incident_to_unlink} = AA009983</msg>
+<var>${incident_to_unlink}</var>
+<arg>${first_incident_to_unlink}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:22:02.337290" elapsed="0.699711"/>
+<status status="PASS" start="2025-12-11T17:50:11.613793" elapsed="0.021678"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>the incident selected to unlink is: ${incident_to_unlink}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-11T17:50:11.636471" elapsed="0.000269"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2025-10-14T14:22:03.037001" level="INFO">${extracted_incident_reference} = AA009983</msg>
-<arg>${extracted_incident_reference}</arg>
-<arg>${extracted_incident_reference}</arg>
+<msg time="2025-12-11T17:50:11.636740" level="INFO">${incident_to_unlink} = AA009983</msg>
+<arg>${incident_to_unlink}</arg>
+<arg>${incident_to_unlink}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2025-10-14T14:22:03.037001" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-11T17:50:11.636740" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:03.038002" level="INFO">Clicking element 'xpath://button[@id='btn-slide-out-close']'.</msg>
+<msg time="2025-12-11T17:50:11.637279" level="INFO">Clicking element 'xpath://button[@id='btn-event-delink-0']'.</msg>
+<arg>${first_incident_delink_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-11T17:50:11.637279" elapsed="0.083190"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${delink_confirmation_dialog_box}</arg>
+<arg>10</arg>
+<arg>Confirmation dialog is not visible after clicking delink button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-11T17:50:11.720469" elapsed="0.244058"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2025-12-11T17:50:11.965031" level="INFO">Clicking element 'xpath://button[text()='Yes']'.</msg>
+<arg>${delink_yes_option}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-11T17:50:11.965031" elapsed="0.095726"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="Selenium2Library">
+<msg time="2025-12-11T17:50:12.099490" level="INFO">Element 'xpath=//*[contains(text(), 'AA009983')]' exists but is not displayed.</msg>
+<arg>xpath=//*[contains(text(), '${incident_to_unlink}')]</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2025-12-11T17:50:12.060757" elapsed="0.038733"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Event_unlinked_successfully_toast_message}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-11T17:50:12.100499" elapsed="1.560744"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${Cancel_link_button}</arg>
+<arg>10</arg>
+<arg>Cancel button is not visible on the link/unlink incident on people preview page</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-11T17:50:13.661243" elapsed="0.024933"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2025-12-11T17:50:13.686176" level="INFO">Clicking element 'xpath://button[@id='btn-slide-out-close']'.</msg>
 <arg>${Cancel_link_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:22:03.038002" elapsed="0.086452"/>
+<status status="PASS" start="2025-12-11T17:50:13.686176" elapsed="0.111502"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:21:58.427994" elapsed="4.696460"/>
+<status status="PASS" start="2025-12-11T17:50:10.914742" elapsed="2.882936"/>
 </kw>
-<kw name="Navigate to Search Module and search for the Linked people incident" owner="LinkIncidentToPeopleKeywords">
+<kw name="Navigate to Search Module and search for the unlinked people incident" owner="LinkIncidentToPeopleKeywords">
 <kw name="Navigate To Search Page" owner="SearchKeywords">
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${SEARCH_MODULE}</arg>
 <arg>5</arg>
 <arg>Search mobule is not shown</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:22:03.126003" elapsed="0.035139"/>
+<status status="PASS" start="2025-12-11T17:50:13.800672" elapsed="0.030915"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:03.161142" level="INFO">Clicking element 'id=navbar-Search'.</msg>
+<msg time="2025-12-11T17:50:13.832585" level="INFO">Clicking element 'id=navbar-Search'.</msg>
 <arg>${SEARCH_MODULE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:22:03.161142" elapsed="0.601941"/>
+<status status="PASS" start="2025-12-11T17:50:13.831587" elapsed="0.582443"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:22:03.124967" elapsed="0.638116"/>
+<status status="PASS" start="2025-12-11T17:50:13.799674" elapsed="0.614356"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${SEARCH_TEXTFIELD}</arg>
 <arg>15</arg>
 <arg>Search text field is not visible</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:22:03.763083" elapsed="3.548991"/>
+<status status="PASS" start="2025-12-11T17:50:14.414030" elapsed="0.710675"/>
 </kw>
 <kw name="Input Text" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:07.313072" level="INFO">Typing text 'AA009983' into text field 'xpath=//input[@id='txt-global-search']'.</msg>
+<msg time="2025-12-11T17:50:15.125702" level="INFO">Typing text 'AA009983' into text field 'xpath=//input[@id='txt-global-search']'.</msg>
 <arg>${SEARCH_TEXTFIELD}</arg>
-<arg>${extracted_incident_reference}</arg>
+<arg>${incident_to_unlink}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:22:07.312074" elapsed="0.202002"/>
+<status status="PASS" start="2025-12-11T17:50:15.124705" elapsed="0.106128"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:07.516592" level="INFO">Clicking element 'xpath=//button[@id='btn-global-search']'.</msg>
+<msg time="2025-12-11T17:50:15.230833" level="INFO">Clicking element 'xpath=//button[@id='btn-global-search']'.</msg>
 <arg>${search_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:22:07.514589" elapsed="0.112177"/>
+<status status="PASS" start="2025-12-11T17:50:15.230833" elapsed="0.092882"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="Selenium2Library">
-<arg>${extracted_incident_reference}</arg>
+<arg>${incident_to_unlink}</arg>
 <arg>15</arg>
 <arg>Search results are not shown</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-14T14:22:07.627764" elapsed="0.174270"/>
+<status status="PASS" start="2025-12-11T17:50:15.324711" elapsed="0.154600"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:07.802034" level="INFO">Clicking element 'xpath://span[@class='mat-button-wrapper']/child::em[@id='incident-search-view']'.</msg>
+<msg time="2025-12-11T17:50:15.480296" level="INFO">Clicking element 'xpath://span[@class='mat-button-wrapper']/child::em[@id='incident-search-view']'.</msg>
 <arg>${search_module_view_event_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:22:07.802034" elapsed="2.088296"/>
+<status status="PASS" start="2025-12-11T17:50:15.479311" elapsed="2.908424"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:22:03.124967" elapsed="6.765363"/>
+<status status="PASS" start="2025-12-11T17:50:13.798676" elapsed="4.589059"/>
 </kw>
-<kw name="Go to Involved Entities Tab and verify the linked people presence" owner="LinkIncidentToPeopleKeywords">
+<kw name="Go to Involved Entities Tab and verify the linked suspect absence" owner="LinkIncidentToPeopleKeywords">
 <kw name="Wait Until Page Contains Element" owner="Selenium2Library">
 <arg>${incident_view_header}</arg>
 <arg>15</arg>
 <arg>Incident view header is not visible</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-14T14:22:09.890912" elapsed="6.163113"/>
+<status status="PASS" start="2025-12-11T17:50:18.388923" elapsed="6.384485"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-14T14:22:18.054459" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-12-11T17:50:26.774777" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-14T14:22:16.054025" elapsed="2.000434"/>
+<status status="PASS" start="2025-12-11T17:50:24.773408" elapsed="2.001369"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-10-14T14:22:18.054459" level="INFO">Clicking element 'xpath://div[@id='left-panel-dynamic-page-title3' and text()='Involved Entities']'.</msg>
+<msg time="2025-12-11T17:50:26.775281" level="INFO">Clicking element 'xpath://div[@class='mat-tooltip-trigger normal-text ng-star-inserted' and text()='Involved Entities']'.</msg>
 <arg>${involved_entities_tab}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-14T14:22:18.054459" elapsed="0.084883"/>
+<status status="PASS" start="2025-12-11T17:50:26.774777" elapsed="0.076304"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="Selenium2Library">
 <arg>${People_widget}</arg>
 <arg>10</arg>
 <arg>People widget is not visible</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:22:18.139342" elapsed="0.022987"/>
+<status status="PASS" start="2025-12-11T17:50:26.852079" elapsed="0.020945"/>
 </kw>
-<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
-<arg>${People_data}</arg>
-<arg>15</arg>
-<arg>People data was not loaded</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-14T14:22:18.162329" elapsed="1.855816"/>
+<kw name="Element Should Not Be Visible" owner="Selenium2Library">
+<msg time="2025-12-11T17:50:26.913610" level="INFO">Element 'xpath=//*[contains(text(), 'User')]' exists but is not displayed.</msg>
+<arg>xpath=//*[contains(text(), '${unlink_people_first_name}')]</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2025-12-11T17:50:26.874021" elapsed="0.039589"/>
 </kw>
-<kw name="Wait Until Page Contains" owner="Selenium2Library">
-<arg>${first_name}</arg>
-<arg>20</arg>
-<arg>Linked person ${first_name} is not visible under Involved Entities tab.</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-14T14:22:20.018145" elapsed="0.178833"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="Selenium2Library">
-<arg>${last_name}</arg>
-<arg>20</arg>
-<arg>Linked person ${last_name} is not visible under Involved Entities tab.</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-14T14:22:20.197976" elapsed="0.163210"/>
+<kw name="Element Should Not Be Visible" owner="Selenium2Library">
+<msg time="2025-12-11T17:50:31.987867" level="INFO">Element 'xpath=//*[contains(text(), 'Sus 2')]' did not exist.</msg>
+<arg>xpath=//*[contains(text(), '${unlink_people_last_name}')]</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2025-12-11T17:50:26.914627" elapsed="5.073240"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Linked person ${first_name} ${last_name} is visible under Involved Entities tab of the linked incident</arg>
+<arg>Unlinked person ${unlink_people_first_name} ${unlink_people_last_name} is not visible under Involved Entities tab of the unlinked incident as expected</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-14T14:22:20.362183" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-11T17:50:31.987867" elapsed="0.001422"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:22:09.890912" elapsed="10.471271"/>
+<status status="PASS" start="2025-12-11T17:50:18.388923" elapsed="13.600366"/>
 </kw>
 <kw name="Stop Test Case Recording" owner="General" type="TEARDOWN">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-14T14:22:22.364324" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-12-11T17:50:33.990785" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-14T14:22:20.363817" elapsed="2.000507"/>
+<status status="PASS" start="2025-12-11T17:50:31.990327" elapsed="2.000458"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Stop Video Recording">
-<msg time="2025-10-14T14:22:22.369918" level="FAIL">No keyword with name 'Stop Video Recording' found.</msg>
-<status status="FAIL" start="2025-10-14T14:22:22.369918" elapsed="0.000000">No keyword with name 'Stop Video Recording' found.</status>
+<msg time="2025-12-11T17:50:33.994777" level="FAIL">No keyword with name 'Stop Video Recording' found.</msg>
+<status status="FAIL" start="2025-12-11T17:50:33.994777" elapsed="0.000000">No keyword with name 'Stop Video Recording' found.</status>
 </kw>
 <arg>Stop Video Recording</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-14T14:22:22.364324" elapsed="0.006531"/>
+<status status="PASS" start="2025-12-11T17:50:33.990785" elapsed="0.003992"/>
 </kw>
-<status status="PASS" start="2025-10-14T14:22:20.362183" elapsed="2.008672"/>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-12-11T17:50:33.994777" level="INFO">${original_file} = LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_11_17_49_53</msg>
+<var>${original_file}</var>
+<arg>${recording_file}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-12-11T17:50:33.994777" elapsed="0.000998"/>
 </kw>
-<doc>Verify user able to view people which are linked to incident again in incident preview page</doc>
-<tag>LPI_VerifyInIncidentPreview</tag>
-<status status="PASS" start="2025-10-14T14:21:32.099268" elapsed="50.271861"/>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-12-11T17:50:33.995775" level="INFO">${new_file} = LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_11_17_49_53_PASS</msg>
+<var>${new_file}</var>
+<arg>${recording_file}_${test_status}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-12-11T17:50:33.995775" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Move File" owner="OperatingSystem">
+<msg time="2025-12-11T17:50:33.996772" level="FAIL">Source file 'C:\Users\Asus\PycharmProjects\Synapse\LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_11_17_49_53_1.webm' does not exist.</msg>
+<arg>${original_file}_1.webm</arg>
+<arg>./Test_Recordings/${new_file}.webm</arg>
+<doc>Moves the source file into the destination.</doc>
+<status status="FAIL" start="2025-12-11T17:50:33.995775" elapsed="0.000997">Source file 'C:\Users\Asus\PycharmProjects\Synapse\LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_11_17_49_53_1.webm' does not exist.</status>
+</kw>
+<arg>Move File</arg>
+<arg>${original_file}_1.webm</arg>
+<arg>./Test_Recordings/${new_file}.webm</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-11T17:50:33.995775" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2025-12-11T17:50:31.989289" elapsed="2.007483"/>
+</kw>
+<doc>verify user should able to unlink incident from people preview page(suspect)  and verify it in incident detail page</doc>
+<tag>LPI_UnlinkIncidentFromPeople</tag>
+<status status="PASS" start="2025-12-11T17:49:53.043852" elapsed="40.952920"/>
 </test>
 <kw name="Close Browser" owner="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-10-14T14:22:22.371968" elapsed="2.600590"/>
+<status status="PASS" start="2025-12-11T17:50:33.998769" elapsed="2.379202"/>
 </kw>
 <doc>test cases for Link Incidents to people</doc>
-<status status="PASS" start="2025-10-14T14:20:57.724961" elapsed="87.247597"/>
+<status status="PASS" start="2025-12-11T17:49:24.189843" elapsed="72.188128"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">LPI_VerifyInIncidentPreview</stat>
+<stat pass="1" fail="0" skip="0">LPI_UnlinkIncidentFromPeople</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="LinkIncidentToPeopleTestSuite">LinkIncidentToPeopleTestSuite</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-10-14T14:20:57.785311" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\General.robot' on line 88: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:57.786040" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\General.robot' on line 95: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:57.788071" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\General.robot' on line 239: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.360508" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 25: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.362472" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 305: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.363979" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 324: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.363979" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 331: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.364986" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 338: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.364986" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 345: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.366285" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 352: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.366285" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 359: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.367325" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 392: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.368327" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 398: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.369313" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 404: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.369313" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 410: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.370314" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 416: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.370314" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 423: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.371311" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 430: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.371311" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 437: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.372308" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 442: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.372308" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 447: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.372308" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 452: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.373872" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 457: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.373872" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 462: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.374873" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 467: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.374873" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 475: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.376084" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 480: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.377088" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 485: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.377088" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 496: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.378085" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 507: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.378085" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 518: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.379084" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 529: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.379084" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 540: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.380082" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 551: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.381079" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 564: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.381079" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 578: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.382077" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 591: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.383075" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 598: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.384072" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 603: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.384578" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 608: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.385581" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 613: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.386578" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 619: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.386578" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 625: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.387581" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 630: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-10-14T14:20:59.397099" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 1430: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.227435" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\General.robot' on line 88: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.228433" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\General.robot' on line 95: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.230428" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\General.robot' on line 239: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.796979" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 25: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.798977" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 305: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.799607" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 324: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.799607" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 331: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.800608" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 338: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.800608" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 345: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.800608" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 352: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.801605" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 359: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.801605" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 392: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.801605" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 398: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.802602" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 404: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.802602" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 410: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.802602" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 416: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.802602" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 423: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.803600" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 430: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.803600" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 437: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.803600" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 442: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.804597" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 447: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.804597" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 452: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.804597" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 457: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.804597" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 462: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.805595" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 467: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.805595" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 475: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.805595" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 480: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.806592" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 485: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.806592" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 496: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.807589" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 507: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.807589" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 518: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.808587" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 529: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.808587" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 540: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.808587" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 551: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.809583" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 564: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.809583" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 578: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.809583" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 591: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.810581" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 598: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.810581" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 603: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.810581" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 608: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.810581" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 613: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.811578" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 619: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.811578" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 625: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.811578" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 630: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-11T17:49:24.816564" level="WARN">Error in file 'C:\Users\Asus\PycharmProjects\Synapse\Resources\Keywords\DataComparisonKeywords.robot' on line 1430: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>

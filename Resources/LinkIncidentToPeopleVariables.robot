@@ -1,4 +1,32 @@
 *** Variables ***
+#${Peoples_dashboard_page}    xpath://div[@class='mat-tooltip-trigger normal-text ng-star-inserted' and text()='people']
+#${People_dashboard_page_title}    xpath://h1[@id='dashboard-title']
+#${People_widget}    xpath://div[@class='m-portlet__head gridster-drag-class']
+#${People_data}    xpath:(//div[@class='grid-view-img ng-star-inserted'])[1]
+#${People_preview_page}      xpath://as-split-area[@id='right-split-area']
+#${People_name}    xpath://span[@class='mat-tooltip-trigger ng-star-inserted']
+#${Link/Unlink_button}    xpath://span[@id='spn-link-unlink-people']
+#${Link/Unlink People To Events header}    xpath://span[text()='Link/Unlink People To Events']
+#${Select events to link to people text}    xpath://p[text()='Select events to link to people']
+#${Incidents_dropdown}    xpath://zd-select-v2[@id='select-link-incident']
+#${Cancel_link_button}    xpath://button[@id='btn-slide-out-close']
+#${Link_button}    xpath://button[@id='btn-slide-out-confirm']
+#${Incident_dropdown_search_box}    xpath://input[@placeholder='Search']
+#${AA_category_incident}    AA00
+#${Alarm_activations_incident_reference_number}    xpath:(//div[@class='zd-select-option'])[1]
+#${Alarm_activation_incident_second_reference_number}    xpath:(//div[@class='zd-select-option'])[2]
+#${Event_linked_successfully_toast_message}    Event linked successfully
+#${dropdown_options}    xpath://div[@class='zd-select-option']
+#${search_button}    xpath://button[@id='btn-global-search']
+#${incident_reference}    xpath:(//div[@class='reference-id'])[1]
+#${incident_view_header}    xpath://div[@id='incident-view-header']
+#${involved_entities_tab}    xpath://div[@id='left-panel-dynamic-page-title3' and text()='Involved Entities']
+#${search_module_view_event_button}     xpath://span[@class='mat-button-wrapper']/child::em[@id='incident-search-view']
+#${People_first_name}    xpath:(//div[@class='div-details-field']/child::h5)[1]
+#${People_last_name}    xpath:(//div[@class='div-details-field']/child::h5)[2]
+
+
+
 ${Peoples_dashboard_page}    xpath://div[@class='mat-tooltip-trigger normal-text ng-star-inserted' and text()='people']
 ${People_dashboard_page_title}    xpath://h1[@id='dashboard-title']
 ${People_widget}    xpath://div[@class='m-portlet__head gridster-drag-class']
@@ -16,11 +44,27 @@ ${AA_category_incident}    AA00
 ${Alarm_activations_incident_reference_number}    xpath:(//div[@class='zd-select-option'])[1]
 ${Alarm_activation_incident_second_reference_number}    xpath:(//div[@class='zd-select-option'])[2]
 ${Event_linked_successfully_toast_message}    Event linked successfully
+${Event_unlinked_successfully_toast_message}    Event unlinked successfully
 ${dropdown_options}    xpath://div[@class='zd-select-option']
 ${search_button}    xpath://button[@id='btn-global-search']
 ${incident_reference}    xpath:(//div[@class='reference-id'])[1]
 ${incident_view_header}    xpath://div[@id='incident-view-header']
-${involved_entities_tab}    xpath://div[@id='left-panel-dynamic-page-title3' and text()='Involved Entities']
+${involved_entities_tab}    xpath://div[@class='mat-tooltip-trigger normal-text ng-star-inserted' and text()='Involved Entities']
 ${search_module_view_event_button}     xpath://span[@class='mat-button-wrapper']/child::em[@id='incident-search-view']
 ${People_first_name}    xpath:(//div[@class='div-details-field']/child::h5)[1]
 ${People_last_name}    xpath:(//div[@class='div-details-field']/child::h5)[2]
+${victim_widget}    xpath:(//div[@class='m-portlet__head-title'])[2]
+${victim_data}  xpath:(//div[@id='img-gallery-item-0'])[2]
+${witness_tab}    xpath://mat-chip[@id='dashboard-tab-item2']
+${witness_tab_ubder_involved_entities}  xpath://mat-chip[@id='dashboard-tab-item3']
+${witness_tab_ubder_involved_entities_post_unlink}  xpath://mat-chip/child::div/following-sibling::span[text()='Witnesses']
+${victim_tab}   xpath://mat-chip[@id='dashboard-tab-item3']
+${victim_tab_ubder_involved_entities}   xpath://mat-chip[@id='dashboard-tab-item2']
+${first_incident_to_unlink}     xpath:(//div[@class='reference-row ng-star-inserted']/child::div[@class='reference-id'])[1]
+${first_incident_delink_button}     xpath://button[@id='btn-event-delink-0']
+${delink_confirmation_dialog_box}   xpath://m-confirmation-dialog/child::div
+${delink_yes_option}    xpath://button[text()='Yes']
+${victim_tab_under_involved_entities}    xpath://mat-chip/child::div/following-sibling::span[text()='Impacted Persons']
+${snackbar_toast_message}    xpath://span[@class='mat-simple-snack-bar-content']
+${Dismiss_toast_message_button}    xpath://button[@class='mat-focus-indicator mat-button mat-button-base']/child::span[text()='Dismiss']
+${POPUP_HANDLED}    False

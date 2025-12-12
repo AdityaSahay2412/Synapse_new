@@ -261,8 +261,8 @@ Start Test Case Recording
 Stop Test Case Recording
     Sleep    2
     run keyword and ignore error    Stop Video Recording
-#    ${original_file} =    Set Variable    ${recording_file}
-#    ${new_file} =    Set Variable    ${recording_file}_${test_status}
-#    run keyword and ignore error  Move File    ${original_file}_1.webm    ./Test_Recordings/${new_file}.webm
+    ${original_file} =    Set Variable    ${recording_file}
+    ${new_file} =    Set Variable    ${recording_file}_${test_status}
+    run keyword and ignore error  Move File    ${original_file}_1.webm    ./Test_Recordings/${new_file}.webm
 
 
