@@ -140,7 +140,7 @@ LPI_019_verify user should able to unlink incident from people preview page(witn
     Navigate to Search Module and search for the unlinked people incident
     Go to Involved Entities Tab and verify the linked witness absence
 
-LPI_020_verify user should able to unlink incident from people preview page(victim) and verify it in incident detail page
+LPI_020_verify user should able to unlink incident from people preview page(victim) and verify it in incident detail page git wala
     [Documentation]    verify user should able to unlink incident from people preview page(victim)  and verify it in incident detail page
     [Tags]    LPI_UnlinkIncidentFromPeopleVictim
     Navigate to People dahsboard page and verify the victim data is loaded
