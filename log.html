@@ -5,60 +5,16 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 7.0 (Python 3.11.3 on win32)" name="Generator">
+<meta content="Robot Framework 6.1.1 (Python 3.11.3 on win32)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
-<style media="all">
-:root {
-    --text-color: black;
-    --background-color: white;
-    --primary-color: #ddd;
-    --secondary-color: #ccc;
-    --link-color: #15c;
-    --link-hover-color: #61c;
-    --highlight-color: #eee;
-    --target-color: #f9f9f9;
-    --pass-color: #97bd61;
-    --fail-color: #ce3e01;
-    --warn-color: #fed84f;
-    --pass-link-color: #098a09;
-    --warn-link-color: #927201;
-    --fail-link-color: #ce3e01;
-    --ascending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
-    --descending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
-    }
-}
-[data-theme="dark"] {
-    --text-color: #e2e1d7;
-    --background-color: #1c2227;
-    --primary-color: #26373b;
-    --secondary-color: #424f5a;
-    --link-color: #8cc4ff;
-    --link-hover-color: #bb86fc;
-    --highlight-color: #002b36;
-    --target-color: #1a252e;
-    --pass-link-color: #97bd61;
-    --warn-link-color: #fed84f;
-    --fail-link-color: #ff9b8f;
-    --ascending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAAfn5+////f/cqYgAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
-    --descending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAA////fn5+K6jOaAAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
-}
+<style media="all" type="text/css">
 /* Generic and misc styles */
 body {
     font-family: Helvetica, sans-serif;
     font-size: 0.8em;
-    color: black; /* Fallback value */
-    color: var(--text-color);
+    color: black;
     padding: 6px;
-    background: white; /* Fallback value */
-    background: var(--background-color);
-    margin-left: 15px;
-}
-body[theme-toggled] {
-    transition: background 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
+    background: white;
 }
 table {
     table-layout: fixed;
@@ -73,37 +29,20 @@ br {
     mso-data-placement: same-cell; /* maintain line breaks in Excel */
 }
 hr {
-    background: #ccc; /* Fallback value */
-    background: var(--secondary-color);
+    background: #ccc;
     height: 1px;
     border: 0;
 }
 a, a:link, a:visited {
     text-decoration: none;
-    color: #15c; /* Fallback value */
-    color: var(--link-color);
+    color: #15c;
 }
 a > img {
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: #15c !important; /* Fallback value */
-    border-color: var(--link-color) !important;
+    border: 1px solid #15c !important;
 }
 a:hover, a:active {
     text-decoration: underline;
-    color: #61c; /* Fallback value */
-    color: var(--link-hover-color);
-}
-select {
-    background-color: white; /* Fallback value */
-    background-color: var(--background-color);
-    color: black; /* Fallback value */
-    color: var(--text-color);
-    border-width: 2px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
-    border-radius: 4px;
+    color: #61c;
 }
 .parent-name {
     font-size: 0.7em;
@@ -116,7 +55,7 @@ select {
 #header {
     width: 65em;
     height: 3em;
-    margin: 20px 0 6px 0;
+    margin: 6px 0;
 }
 h1 {
     float: left;
@@ -144,17 +83,14 @@ h2 {
 }
 /* Status text colors -- !important allows using them in links */
 .fail {
-    color: #ce3e01 !important; /* Fallback value */
-    color: var(--fail-link-color) !important;
+    color: #ce3e01 !important;
     font-weight: bold;
 }
 .pass {
-    color: #098a09 !important; /* Fallback value */
-    color: var(--pass-link-color) !important;
+    color: #098a09 !important;
 }
 .skip {
-    color: #927201 !important; /* Fallback value */
-    color: var(--warn-link-color) !important;
+    color: #927201 !important;
     font-weight: bold;
 }
 .label {
@@ -162,10 +98,8 @@ h2 {
     font-size: 0.75em;
     letter-spacing: 1px;
     white-space: nowrap;
-    color: black; /* Fallback value */
-    color: var(--text-color);
-    background-color: #ddd; /* Fallback value */
-    background-color: var(--primary-color);
+    color: black;
+    background-color: #ddd;
     border-radius: 3px;
 }
 .label.debug, .label.trace, .label.error, .label.keyword {
@@ -175,18 +109,15 @@ h2 {
     font-weight: bold;
 }
 .label.pass {
-    background-color: #97bd61; /* Fallback value */
-    background-color: var(--pass-color);
+    background-color: #97bd61;
     color: #000 !important;
 }
 .label.fail, .label.error {
-    background-color: #ce3e01; /* Fallback value */
-    background-color: var(--fail-color);
+    background-color: #ce3e01;
     color: #fff !important;
 }
 .label.skip, .label.warn {
-    background-color: #fed84f; /* Fallback value */
-    background-color: var(--warn-color);
+    background-color: #fed84f;
     color: #000 !important;
 }
 /* Top right header */
@@ -215,8 +146,7 @@ h2 {
     padding: 0.3em 0;
     font-size: 0.9em;
     border-bottom-left-radius: 4px;
-    background: #ddd; /* Fallback value */
-    background: var(--primary-color);
+    background: #ddd;
 }
 /* Statistics table */
 .statistics {
@@ -226,20 +156,15 @@ h2 {
     margin-bottom: 1em;
 }
 .statistics tr:hover {
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #f4f4f4;
     cursor: pointer;
 }
 .statistics th, .statistics td {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+    border: 1px solid #ccc;
     padding: 0.1em 0.3em;
 }
 .statistics th {
-    background-color: #ddd; /* Fallback value */
-    background-color: var(--primary-color);
+    background-color: #ddd;
     padding: 0.2em 0.3em;
 }
 .statistics td {
@@ -275,33 +200,27 @@ th.stats-col-graph:hover {
 }
 /* Statistics graph */
 .graph, .empty-graph {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+    border: 1px solid #ccc;
     width: auto;
     height: 7px;
     padding: 0;
+    background: #aaa;
 }
 .empty-graph {
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #eee;
 }
 .pass-bar, .fail-bar, .skip-bar {
     float: left;
     height: 100%;
 }
 .fail-bar {
-    background: #ce3e01; /* Fallback value */
-    background: var(--fail-color);
+    background: #ce3e01;
 }
 .pass-bar {
-    background: #97bd61; /* Fallback value */
-    background: var(--pass-color);
+    background: #97bd61;
 }
 .skip-bar {
-    background: #fed84f; /* Fallback value */
-    background: var(--warn-color);
+    background: #fed84f;
 }
 /* Tablesorter - adapted from provided Blue Skin */
 .tablesorter-header {
@@ -311,84 +230,30 @@ th.stats-col-graph:hover {
     cursor: pointer;
 }
 .tablesorter-header:hover {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--secondary-color);
+    background-color: #ccc;
 }
 .tablesorter-headerAsc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==); /* Fallback value */
-    background-image: var(--ascending-icon);
-    background-color: #ccc !important; /* Fallback value */
-    background-color: var(--secondary-color) !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
+    background-color: #ccc !important;
 }
 .tablesorter-headerDesc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==); /* Fallback value */
-    background-image: var(--descending-icon);
-    background-color: #ccc !important; /* Fallback value */
-    background-color: var(--secondary-color) !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
+    background-color: #ccc !important;
 }
 .sorter-false {
     background-image: none;
     cursor: default;
 }
 .sorter-false:hover {
-    background-color: #ddd; /* Fallback value */
-    background-color: var(--primary-color);
-}
-#theme-toggle {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 28px;
-    height: 28px;
-    border: none;
-    padding: 4px;
-    z-index: 1000;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background: var(--highlight-color);
-}
-[data-theme="dark"] .dark-mode-icon,
-[data-theme="light"] .light-mode-icon {
-    display: none;
-}
-[data-theme="dark"] .light-mode-icon,
-[data-theme="light"] .dark-mode-icon {
-    display: block;
-}
-@keyframes highlight {
-    0% {
-        background: var(--primary-color)
-    }
-    100% {
-        background: var(--target-color);
-    }
-}
-:target {
-    background: var(--target-color);
-    transition: background 0.3s;
-    animation: highlight 4s;
+    background-color: #ddd;
 }
 </style>
-<style media="all">
+<style media="all" type="text/css">
 /* Icons are from Open Iconic <https://useiconic.com/open/>.
    Licensed under the MIT License. */
-:root {
-    --icon-filter: invert(0);
-    --icon-highlight: var(--secondary-color);
-    --elapsed-color: #666;
-}
-/* @media (prefers-color-scheme: dark) { */
-[data-theme="dark"] {
-    --icon-filter: invert(1);
-    --icon-highlight: #a39990;
-    --elapsed-color: #999;
-}
 /* Containers */
 .suite, .test, #errors {
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     padding: 0.3em 0.2em;
     margin: 0.2em 0;
 }
@@ -417,10 +282,8 @@ th.stats-col-graph:hover {
 }
 .element-header:hover {
     cursor: pointer;
-    background-color: #eee; /* Fallback value */
-    background-color: var(--highlight-color);
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+    background-color: #eee;
+    border-color: #ccc;
 }
 .element-header-toggle {
     position: absolute;
@@ -430,14 +293,10 @@ th.stats-col-graph:hover {
     background-position: center;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAQAAABKxSfDAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeCR0JChSkZz20AAAAGklEQVQI12NgQAKMDKzInP8IDhOqMk4G7AAANQwBE427PYUAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0wIDB2Mmg4di0yaC04eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgLz4KPC9zdmc+), none;
-    filter: var(--icon-filter);
     height: 10px;
     width: 10px;
     background-size: 6px 6px;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--icon-highlight);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 .closed > .element-header-toggle {
@@ -445,8 +304,7 @@ th.stats-col-graph:hover {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0zIDB2M2gtM3YyaDN2M2gydi0zaDN2LTJoLTN2LTNoLTJ6IiAvPgo8L3N2Zz4=), none;
 }
 .element-header:hover > .element-header-toggle {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--icon-highlight);
+    background-color: #ccc;
 }
 .element-header-right:hover ~ .element-header-toggle {
     background-color: transparent;
@@ -466,31 +324,23 @@ th.stats-col-graph:hover {
 }
 .name {
     font-weight: bold;
-    white-space: pre-wrap;
-}
-.arg, .assign {
-    white-space: pre-wrap;
 }
 .elapsed {
     float: right;
-    color: #666; /* Fallback value */
-    color: var(--elapsed-color);
+    color: #666;
     padding-left: 1em;
 }
 .link {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHlJREFUGJVtzrEJwmAQBtCn6ASuIKTIBhY2gmghBiJYB1udwk10B8FJbKMBcQFbtbkfJHrVwfu+4/idJR64Y9H7E3higj5O3S8Y44ApLnjhnXCNGhV2yNGggDJwiC02gavUbpDFvscRo4QdXOMKDHBufz3HLYKzNn4AbSkV3fncGQYAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik01Ljg4LjAzYy0uMTguMDEtLjM2LjAzLS41My4wOS0uMjcuMS0uNTMuMjUtLjc1LjQ3YS41LjUgMCAxIDAgLjY5LjY5Yy4xMS0uMTEuMjQtLjE3LjM4LS4yMi4zNS0uMTIuNzgtLjA3IDEuMDYuMjIuMzkuMzkuMzkgMS4wNCAwIDEuNDRsLTEuNSAxLjVjLS40NC40NC0uOC40OC0xLjA2LjQ3LS4yNi0uMDEtLjQxLS4xMy0uNDEtLjEzYS41LjUgMCAxIDAtLjUuODhzLjM0LjIyLjg0LjI1Yy41LjAzIDEuMi0uMTYgMS44MS0uNzhsMS41LTEuNWMuNzgtLjc4Ljc4LTIuMDQgMC0yLjgxLS4yOC0uMjgtLjYxLS40NS0uOTctLjUzLS4xOC0uMDQtLjM4LS4wNC0uNTYtLjAzem0tMiAyLjMxYy0uNS0uMDItMS4xOS4xNS0xLjc4Ljc1bC0xLjUgMS41Yy0uNzguNzgtLjc4IDIuMDQgMCAyLjgxLjU2LjU2IDEuMzYuNzIgMi4wNi40Ny4yNy0uMS41My0uMjUuNzUtLjQ3YS41LjUgMCAxIDAtLjY5LS42OWMtLjExLjExLS4yNC4xNy0uMzguMjItLjM1LjEyLS43OC4wNy0xLjA2LS4yMi0uMzktLjM5LS4zOS0xLjA0IDAtMS40NGwxLjUtMS41Yy40LS40Ljc1LS40NSAxLjAzLS40NC4yOC4wMS40Ny4wOS40Ny4wOWEuNS41IDAgMSAwIC40NC0uODhzLS4zNC0uMi0uODQtLjIyeiIKICAvPgo8L3N2Zz4=), none;
-    filter: var(--icon-filter);
 }
 .expand {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAADtJREFUGJVjYCACKDAwMByA0ljFDjAwMPxnYGB4ABVQgLL/Q+VQBB6gseGmIivCkERXhFUSWRFOSawAAEl7E3uv1iMcAAAAAElFTkSuQmCC);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0xLjUgMGwtMS41IDEuNSA0IDQgNC00LTEuNS0xLjUtMi41IDIuNS0yLjUtMi41eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxKSIgLz4KPC9zdmc+), none;
-    filter: var(--icon-filter);
 }
 .collapse {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAC5JREFUGJVjYCARNEAxTsn/UIyhCFkSQxG6ThQ+C5IpjWhG1yNb4YDFTdjEMAEACi8Q++9Y9TAAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik00IDBsLTQgNCAxLjUgMS41IDIuNS0yLjUgMi41IDIuNSAxLjUtMS41LTQtNHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMSkiIC8+Cjwvc3ZnPg==), none;
-    filter: var(--icon-filter);
 }
 .expand, .collapse, .link {
     float: left;
@@ -502,10 +352,7 @@ th.stats-col-graph:hover {
     background-size: 8px 8px;
     background-repeat: no-repeat;
     background-position: center;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--icon-highlight);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 .link {
@@ -515,8 +362,7 @@ th.stats-col-graph:hover {
     visibility: visible;
 }
 .expand:hover, .collapse:hover, .link:hover {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--icon-highlight);
+    background-color: #ccc;
 }
 /* Messages and errors */
 .messages .time, .messages .message {
@@ -557,16 +403,11 @@ th.stats-col-graph:hover {
 .message-row:hover .select-message div {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeCR0MOzhWKZQOAAAASUlEQVQY032PsRHAIAwDX9BkicD+W8UMEqegAQJWKZ/+3sLZJhFGQEZzNaIa4ibh66En867VNaIeoP5WppNuIGoAlOm3g5VC1AdYeQv1BZPRSgAAAABJRU5ErkJggg==);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0wIDB2MWg4di0xaC04em0wIDJ2MWg2di0xaC02em0wIDJ2MWg4di0xaC04em0wIDJ2MWg2di0xaC02eiIgLz4KPC9zdmc+), none;
-    filter: var(--icon-filter);
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--icon-highlight);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 .select-message:hover div {
-    background-color: #ccc; /* Fallback value */
-    background-color: var(--icon-highlight);
+    background-color: #ccc;
     cursor: pointer;
 }
 /* Message tables - these MUST NOT be combined together because otherwise
@@ -598,7 +439,7 @@ th.stats-col-graph:hover {
     cursor: default;
 }
 </style>
-<style media="print">
+<style media="print" type="text/css">
 body {
     background: white !important;
     padding: 0;
@@ -638,7 +479,7 @@ a:link, a:visited {
     background: #ddd !important;
 }
 </style>
-<style media="all">
+<style media="all" type="text/css">
 #javascript-disabled {
     width: 600px;
     margin: 100px auto 0 auto;
@@ -661,7 +502,7 @@ a:link, a:visited {
     font-style: italic;
 }
 </style>
-<style media="all">
+<style media="all" type="text/css">
 .doc > * {
     margin: 0.7em 1em 0.1em 1em;
     padding: 0;
@@ -673,12 +514,14 @@ a:link, a:visited {
     margin-top: 0.1em;
 }
 .doc table {
+    border: 1px solid #ccc;
     background: transparent;
     border-collapse: collapse;
     empty-cells: show;
     font-size: 0.9em;
 }
 .doc table th, .doc table td {
+    border: 1px solid #ccc;
     background: transparent;
     padding: 0.1em 0.3em;
     height: 1.2em;
@@ -688,32 +531,24 @@ a:link, a:visited {
     letter-spacing: 0.1em;
 }
 .doc pre {
-    border-radius: 2px;
     font-size: 1.1em;
     letter-spacing: 0.05em;
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #f4f4f4;
 }
 .doc code {
-    border-radius: 2px;
     padding: 0 0.2em;
     letter-spacing: 0.05em;
-    background: #eee; /* Fallback value */
-    background: var(--highlight-color);
+    background: #eee;
 }
 .doc li {
     list-style-position: inside;
     list-style-type: square;
 }
-.doc img, .doc table, .doc table th, .doc table td {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc; /* Fallback value */
-    border-color: var(--secondary-color);
+.doc img {
+    border: 1px solid #ccc;
 }
 .doc hr {
-    background: #ccc; /* Fallback value */
-    background: var(--secondary-color);
+    background: #ccc;
     height: 1px;
     border: 0;
 }
@@ -1015,6 +850,7 @@ window.model = (function () {
         suite.populateSuites = createIterablePopulator('Suite');
         suite.childrenNames = ['keyword', 'suite', 'test'];
         suite.callWhenChildrenReady = function (callable) { callable(); };
+        suite.message = data.message;
         suite.children = function () {
             return suite.keywords().concat(suite.tests()).concat(suite.suites());
         };
@@ -1105,7 +941,6 @@ window.model = (function () {
             name: data.name,
             doc: data.doc,
             status: data.status,
-            message: data.message,
             times: data.times,
             id: data.parent ? data.parent.id + '-' + data.id : data.id
         };
@@ -1126,6 +961,7 @@ window.model = (function () {
                 return test.keywords();
         };
         test.tags = data.tags;
+        test.message = data.message;
         test.matchesTagPattern = function (pattern) {
             return containsTagPattern(test.tags, pattern);
         };
@@ -1136,12 +972,13 @@ window.model = (function () {
     }
     function Keyword(data) {
         var kw = createModelObject(data);
+        var flatTypes = ['RETURN', 'BREAK', 'CONTINUE'];
         kw.libname = data.libname;
         kw.fullName = (kw.libname ? kw.libname + '.' : '') + kw.name;
         kw.type = data.type;
         kw.template = 'keywordTemplate';
         kw.arguments = data.args;
-        kw.assign = data.assign + (data.assign ? ' =  ' : '');
+        kw.assign = data.assign + (data.assign ? ' =' : '');
         kw.tags = data.tags;
         kw.timeout = data.timeout;
         kw.populateKeywords = createIterablePopulator('Keyword');
@@ -1520,9 +1357,8 @@ window.testdata = function () {
     var _statistics = null;
     var LEVELS = ['TRACE', 'DEBUG', 'INFO', 'WARN', 'ERROR', 'FAIL', 'SKIP'];
     var STATUSES = ['FAIL', 'PASS', 'SKIP', 'NOT RUN'];
-    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF',
-                         'ELSE IF', 'ELSE', 'RETURN', 'VAR', 'TRY', 'EXCEPT', 'FINALLY',
-                         'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
+    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF', 'ELSE IF', 'ELSE', 'RETURN',
+                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
     function addElement(elem) {
         if (!elem.id)
             elem.id = uniqueId();
@@ -1565,7 +1401,6 @@ window.testdata = function () {
         return createKeyword(parent, element, strings, index - messages.length);
     }
     function createKeyword(parent, element, strings, index) {
-        var status = element[8];
         var kw = model.Keyword({
             parent: parent,
             type: KEYWORD_TYPES[element[0]],
@@ -1581,12 +1416,7 @@ window.testdata = function () {
                 this.doc = function () { return doc; };
                 return doc;
             },
-            status: parseStatus(status),
-            message: function () {
-                var msg = status.length == 4 ? strings.get(status[3]) : '';
-                this.message = function () { return msg; };
-                return msg;
-            },
+            status: parseStatus(element[8], strings),
             times: model.Times(times(element[8])),
             isChildrenLoaded: typeof(element[9]) !== 'number'
         });
@@ -1797,20 +1627,6 @@ window.testdata = function () {
 }();
 </script>
 <script type="text/javascript">
-const lightModeIcon = `
-<svg class="light-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
-    viewBox="0 0 24 24" fill="var(--text-color)">
-    <rect fill="none" height="24" width="24" />
-    <path
-        d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z" />
-</svg>`
-const darkModeIcon = `
-<svg class="dark-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
-    viewBox="0 0 24 24" fill="var(--text-color)">
-    <rect fill="none" height="24" width="24" />
-    <path
-        d="M11.01,3.05C6.51,3.54,3,7.36,3,12c0,4.97,4.03,9,9,9c4.63,0,8.45-3.5,8.95-8c0.09-0.79-0.78-1.42-1.54-0.95 c-0.84,0.54-1.84,0.85-2.91,0.85c-2.98,0-5.4-2.42-5.4-5.4c0-1.06,0.31-2.06,0.84-2.89C12.39,3.94,11.9,2.98,11.01,3.05z" />
-</svg>`
 function removeJavaScriptDisabledWarning() {
     // Not using jQuery here for maximum speed
     document.getElementById('javascript-disabled').style.display = 'none';
@@ -1846,10 +1662,6 @@ function setTitle(suiteName, type) {
 function addHeader() {
     var generated = util.timestamp(window.output.generated);
     $.tmpl('<h1>${title}</h1>' +
-           '<button id=theme-toggle>' +
-             lightModeIcon +
-             darkModeIcon +
-           '</button>' +
            '<div id="generated">' +
              '<span>Generated<br>${generated}</span><br>' +
              '<span id="generated-ago">${ago} ago</span>' +
@@ -1861,7 +1673,6 @@ function addHeader() {
         ago: util.createGeneratedAgoString(generated),
         title: document.title
     }).appendTo($('#header'));
-    document.getElementById('theme-toggle')?.addEventListener('click', theme.onClick);
 }
 function addReportOrLogLink(myType) {
     var url;
@@ -1990,116 +1801,30 @@ function stopPropagation(event) {
     if (event.stopPropagation)
         event.stopPropagation();
 }
-const theme = function () {
-    const storageKey = 'theme-preference';
-    const urlParams = new URLSearchParams(window.location.search);
-    var storage;
-    var theme;
-    function init(givenStorage) {
-        storage = givenStorage;
-        theme = { value: getPreference() };
-        document.body.setAttribute('data-theme', theme.value);
-        reflectPreference();
-        window.matchMedia('(prefers-color-scheme: dark)')
-            .addEventListener('change', ({matches:isDark}) => {
-                theme.value = isDark ? 'dark' : 'light';
-                setPreference();
-            });
-        window.addEventListener('storage', ({key, newValue}) => {
-            if (key === storage.fullKey(storageKey)) {
-                theme.value = newValue === 'dark' ? 'dark' : 'light';
-                setPreference();
-            }
-        });
-    }
-    function getPreference() {
-        if (urlParams.has('theme')) {
-            var urlTheme = urlParams.get('theme') === 'dark' ? 'dark' : 'light';
-            storage.set(storageKey, urlTheme);
-            urlParams.delete('theme');
-            return urlTheme;
-        }
-        if (storage.get(storageKey))
-            return storage.get(storageKey) === 'dark' ? 'dark' : 'light';
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-    function setPreference() {
-        storage.set(storageKey, theme.value);
-        reflectPreference();
-    }
-    function reflectPreference() {
-        document.body.setAttribute('data-theme', theme.value);
-        document.querySelector('#theme-toggle')?.setAttribute('aria-label', theme.value);
-        const event = new Event('theme-change', {value: theme.value});
-        document.dispatchEvent(event);
-    }
-    function onClick() {
-        theme.value = theme.value === 'light' ? 'dark' : 'light';
-        document.body.setAttribute('theme-toggled', "");
-        setPreference();
-    }
-    return {init: init, getPreference: getPreference, setPreference: setPreference,
-        reflectPreference: reflectPreference, onClick: onClick};
-}();
-</script>
-<script type="text/javascript">
-storage = function () {
-    var prefix = 'robot-framework-';
-    var storage;
-    function init(user) {
-        if (user)
-            prefix += user + '-';
-        storage = getStorage();
-    }
-    function getStorage() {
-        // Use localStorage if it's accessible, normal object otherwise.
-        // Inspired by https://stackoverflow.com/questions/11214404
-        try {
-            localStorage.setItem(prefix, prefix);
-            localStorage.removeItem(prefix);
-            return localStorage;
-        } catch (exception) {
-            return {};
-        }
-    }
-    function get(key, defaultValue) {
-        var value = storage[fullKey(key)];
-        if (typeof value === 'undefined')
-            return defaultValue;
-        return value;
-    }
-    function set(key, value) {
-        storage[fullKey(key)] = value;
-    }
-    function fullKey(key) {
-        return prefix + key;
-    }
-    return {init: init, get: get, set: set, fullKey: fullKey};
-}();
 </script>
 <script type="text/javascript">
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,4,[],[1,0,72188],[],[[5,0,6,[7],[1,28854,40953],[[1,8,9,0,0,0,0,0,[1,28855,7480],[[0,10,11,0,12,13,0,0,[1,28855,1],[]],[0,14,11,0,15,16,0,0,[1,28857,13],[[28857,2,17],[28857,2,18],[28857,2,19]]],[0,20,9,0,0,0,0,0,[1,28870,15],[[0,21,22,0,23,24,0,0,[1,28870,5],[[0,25,22,0,26,27,0,0,[1,28870,5],[[0,28,22,0,29,30,0,0,[0,28871,4],[[28874,5,31]]]]]]],[0,32,33,0,34,35,36,0,[1,28875,1],[[28876,2,37]]],[0,38,22,0,39,40,41,0,[1,28876,0],[[28876,2,42]]],[0,25,22,0,26,43,0,0,[1,28876,8],[[0,44,0,0,0,45,0,0,[0,28884,0],[[28884,5,46]]]]],[0,47,22,0,48,41,41,0,[1,28884,1],[[28884,2,42],[28884,2,49]]]]],[0,50,11,0,51,52,0,0,[1,28885,16],[[28892,2,53]]],[0,54,22,0,55,56,57,0,[1,28901,2056],[[0,58,11,0,59,60,0,0,[0,28902,2055],[[30949,2,61],[30949,5,62]]],[30956,2,63]]],[0,21,22,0,23,64,0,0,[1,30956,0],[]],[0,54,22,0,55,65,66,0,[1,30957,1869],[[0,58,11,0,59,67,0,0,[0,30957,1869],[[32825,2,68],[32825,5,69]]],[32826,2,70]]],[0,21,22,0,23,71,0,0,[1,32826,0],[]],[0,54,22,0,55,72,66,0,[1,32827,2733],[[0,58,11,0,59,73,0,0,[0,32827,2733],[[35559,2,74],[35559,5,75]]],[35560,2,70]]],[0,21,22,0,23,76,0,0,[1,35560,0],[]],[0,77,11,0,78,79,0,0,[1,35561,32],[]],[0,10,11,0,12,80,0,0,[1,35593,2],[]],[0,81,11,0,82,0,0,0,[1,35596,739],[[36335,2,83]]]]],[0,84,85,0,0,0,0,0,[1,36336,75],[[0,77,11,0,78,86,0,0,[1,36336,27],[]],[0,87,11,0,88,89,0,0,[1,36364,10],[]],[0,77,11,0,78,90,0,0,[1,36375,23],[]],[0,87,11,0,88,91,0,0,[1,36398,13],[]]]],[0,92,85,0,0,0,0,0,[1,36412,2836],[[0,77,11,0,78,93,0,0,[1,36412,20],[]],[0,94,11,0,95,96,0,0,[1,36432,74],[[36432,2,97]]],[0,87,11,0,88,98,0,0,[1,36505,17],[]],[0,77,11,0,78,99,0,0,[1,36522,2725],[]]]],[0,100,85,0,0,0,0,0,[1,39249,86],[[0,101,11,0,102,103,104,0,[1,39250,42],[[39291,2,105]]],[0,101,11,0,102,106,107,0,[1,39291,43],[[39334,2,108]]],[0,109,22,0,110,111,0,0,[1,39334,0],[[39334,2,105]]],[0,109,22,0,110,112,0,0,[1,39334,1],[[39334,2,108]]]]],[0,113,85,0,0,0,0,0,[1,39335,2216],[[0,114,22,0,115,116,0,0,[1,39335,2000],[[41336,2,117]]],[0,77,11,0,78,118,0,0,[1,41336,24],[]],[0,94,11,0,95,119,0,0,[1,41361,191],[[41361,2,120]]]]],[0,121,85,0,0,0,0,0,[1,41552,3062],[[0,77,11,0,78,122,0,0,[1,41553,181],[]],[0,94,11,0,95,123,0,0,[1,41734,151],[[41734,2,124]]],[0,125,11,0,126,127,0,0,[1,41885,189],[[41886,2,128]]],[0,101,11,0,102,129,130,0,[1,42074,1236],[[43310,2,131]]],[0,132,22,0,133,134,0,0,[1,43310,1],[]],[0,109,22,0,110,135,0,0,[1,43311,0],[[43311,2,131]]],[0,94,11,0,95,129,0,0,[1,43311,93],[[43312,2,136]]],[0,14,11,0,15,137,0,0,[1,43405,28],[[43405,2,17],[43405,2,18],[43405,2,19]]],[0,101,11,0,102,138,139,0,[1,43434,27],[[43460,2,140]]],[0,141,22,0,142,143,0,0,[1,43460,0],[]],[0,77,11,0,78,144,0,0,[1,43461,25],[]],[0,94,11,0,95,145,0,0,[1,43486,89],[[43486,2,146]]],[0,54,22,0,55,147,0,0,[1,43575,1039],[[0,148,11,0,149,150,0,0,[1,43575,1039],[[44614,2,151]]]]]]],[0,113,85,0,0,0,0,0,[1,44615,2109],[[0,114,22,0,115,116,0,0,[1,44615,2001],[[46615,2,117]]],[0,77,11,0,78,118,0,0,[1,46616,46],[]],[0,94,11,0,95,119,0,0,[1,46662,62],[[46663,2,120]]]]],[0,152,85,0,0,0,0,0,[1,46725,2883],[[0,77,11,0,78,153,0,0,[1,46725,699],[]],[0,101,11,0,102,154,155,0,[1,47424,22],[[47445,2,156]]],[0,132,22,0,133,157,0,0,[1,47446,0],[]],[0,109,22,0,110,158,0,0,[1,47447,0],[[47447,2,156]]],[0,94,11,0,95,159,0,0,[1,47447,83],[[47447,2,160]]],[0,77,11,0,78,161,0,0,[1,47530,244],[]],[0,94,11,0,95,162,0,0,[1,47775,96],[[47775,2,163]]],[0,164,11,0,165,166,0,0,[1,47871,39],[[47909,2,167]]],[0,168,11,0,169,170,0,0,[1,47910,1561],[]],[0,77,11,0,78,171,0,0,[1,49471,25],[]],[0,94,11,0,95,172,0,0,[1,49496,112],[[49496,2,173]]]]],[0,174,85,0,0,0,0,0,[1,49609,4589],[[0,175,176,0,0,0,0,0,[1,49610,614],[[0,77,11,0,78,177,0,0,[1,49611,31],[]],[0,94,11,0,95,178,0,0,[1,49642,582],[[49643,2,179]]]]],[0,77,11,0,78,180,0,0,[1,50224,711],[]],[0,125,11,0,126,181,0,0,[1,50935,106],[[50936,2,182]]],[0,94,11,0,95,183,0,0,[1,51041,93],[[51041,2,184]]],[0,168,11,0,169,185,0,0,[1,51135,155],[]],[0,94,11,0,95,186,0,0,[1,51289,2908],[[51290,2,187]]]]],[0,188,85,0,0,0,0,0,[1,54199,13600],[[0,87,11,0,88,189,0,0,[1,54199,6384],[]],[0,114,22,0,115,116,0,0,[1,60583,2001],[[62585,2,117]]],[0,94,11,0,95,190,0,0,[1,62585,76],[[62585,2,191]]],[0,77,11,0,78,192,0,0,[1,62662,21],[]],[0,164,11,0,165,193,0,0,[1,62684,40],[[62724,2,194]]],[0,164,11,0,165,195,0,0,[1,62725,5073],[[67798,2,196]]],[0,132,22,0,133,197,0,0,[1,67798,1],[]]]],[2,198,9,0,0,0,0,0,[1,67799,2007],[[0,114,22,0,115,116,0,0,[1,67800,2000],[[69801,2,117]]],[0,25,22,0,26,199,0,0,[1,69801,4],[[0,199,0,0,0,0,0,0,[0,69805,0],[[69805,5,200]]]]],[0,38,22,0,39,41,201,0,[1,69805,1],[[69805,2,202]]],[0,38,22,0,39,203,204,0,[1,69806,0],[[69806,2,205]]],[0,25,22,0,26,206,0,0,[1,69806,1],[[0,207,208,0,209,210,0,0,[0,69806,1],[[69807,5,211]]]]]]]]]],[[1,212,213,0,0,0,0,0,[1,667,28187],[[0,214,11,0,215,216,0,0,[1,668,7114],[[668,2,217]]],[0,218,11,0,219,0,0,0,[1,7783,59],[]],[0,125,11,0,126,220,0,0,[1,7842,494],[[7843,2,221]]],[0,222,11,0,223,224,0,0,[1,8336,807],[[8337,2,225],[8962,2,226]]],[0,114,22,0,115,13,0,0,[1,9143,1001],[[10144,2,227]]],[0,77,11,0,78,228,0,0,[1,10145,32],[]],[0,94,11,0,95,228,0,0,[1,10177,198],[[10177,2,229]]],[0,77,11,0,78,230,0,0,[1,10376,13202],[]],[0,54,22,0,55,231,232,0,[1,23579,5071],[[0,77,11,0,78,233,0,0,[1,23579,5071],[]],[28650,2,234]]],[0,21,22,0,23,235,0,0,[1,28650,69],[[0,94,11,0,95,236,0,0,[1,28651,68],[[28651,2,237]]]]],[0,77,11,0,78,238,0,0,[1,28719,23],[]],[0,239,11,0,240,241,0,0,[1,28742,10],[[28753,2,242]]],[0,243,213,0,0,0,0,0,[1,28753,101],[[0,239,11,0,240,244,0,0,[1,28753,14],[[28766,2,245]]],[0,94,11,0,95,246,0,0,[1,28766,87],[[28766,2,247]]]]]]],[2,248,11,0,249,0,0,0,[1,69809,2379],[]]],[1,1,0,0]];
+window.output["suite"] = [1,2,3,4,[],[1,0,72215],[],[[5,0,6,[7],[1,22041,47860],[[1,8,9,0,0,0,0,0,[1,22043,9236],[[0,10,11,0,12,13,0,0,[1,22043,1],[]],[0,14,11,0,15,16,0,0,[1,22044,10],[[22045,2,17],[22045,2,18],[22045,2,19]]],[0,20,9,0,0,0,0,0,[1,22054,2552],[[0,21,22,0,23,24,0,0,[1,22054,411],[[0,25,22,0,26,27,0,0,[1,22055,410],[[0,28,22,0,29,30,0,0,[1,22055,410],[]]]]]],[0,31,32,0,33,34,35,0,[1,22465,1],[[22466,2,36]]],[0,37,22,0,38,39,40,0,[1,22466,0],[[22466,2,41]]],[0,25,22,0,26,42,0,0,[1,22466,2140],[[0,43,30,0,44,45,0,0,[1,22466,2140],[[24602,2,46]]]]],[0,47,22,0,48,40,40,0,[1,24606,0],[[24606,2,41],[24606,2,49]]]]],[0,50,11,0,51,52,0,0,[1,24607,21],[[24615,2,53]]],[0,54,22,0,55,56,57,0,[1,24628,1772],[[0,58,11,0,59,60,0,0,[0,24628,1772],[[26395,2,61],[26396,5,62]]],[26400,2,63]]],[0,21,22,0,23,64,0,0,[1,26400,1],[]],[0,54,22,0,55,65,66,0,[1,26401,2420],[[0,58,11,0,59,67,0,0,[0,26401,2418],[[28819,2,68],[28819,5,69]]],[28821,2,70]]],[0,21,22,0,23,71,0,0,[1,28821,0],[]],[0,54,22,0,55,72,66,0,[1,28821,1781],[[0,58,11,0,59,73,0,0,[0,28821,1781],[[30600,2,74],[30601,5,75]]],[30602,2,70]]],[0,21,22,0,23,76,0,0,[1,30602,0],[]],[0,77,11,0,78,79,0,0,[1,30603,24],[]],[0,10,11,0,12,80,0,0,[1,30627,1],[]],[0,81,11,0,82,0,0,0,[1,30628,651],[[31279,2,83]]]]],[0,84,85,0,0,0,0,0,[1,31279,125],[[0,77,11,0,78,86,0,0,[1,31280,43],[]],[0,87,11,0,88,89,0,0,[1,31323,18],[]],[0,77,11,0,78,90,0,0,[1,31341,43],[]],[0,87,11,0,88,91,0,0,[1,31385,19],[]]]],[0,92,85,0,0,0,0,0,[1,31404,2398],[[0,77,11,0,78,93,0,0,[1,31404,51],[]],[0,94,11,0,95,96,0,0,[1,31456,111],[[31456,2,97]]],[0,87,11,0,88,98,0,0,[1,31567,39],[]],[0,77,11,0,78,99,0,0,[1,31606,2196],[]]]],[0,100,85,0,0,0,0,0,[1,33804,170],[[0,101,11,0,102,103,104,0,[1,33804,145],[[33949,2,105]]],[0,101,11,0,102,106,107,0,[1,33949,24],[[33973,2,108]]],[0,109,22,0,110,111,0,0,[1,33973,0],[[33973,2,105]]],[0,109,22,0,110,112,0,0,[1,33974,0],[[33974,2,108]]]]],[0,113,85,0,0,0,0,0,[1,33976,2200],[[0,114,22,0,115,116,0,0,[1,33976,2002],[[35978,2,117]]],[0,77,11,0,78,118,0,0,[1,35978,23],[]],[0,94,11,0,95,119,0,0,[1,36001,175],[[36004,2,120]]]]],[0,121,85,0,0,0,0,0,[1,36176,3058],[[0,77,11,0,78,122,0,0,[1,36176,173],[]],[0,94,11,0,95,123,0,0,[1,36349,119],[[36352,2,124]]],[0,125,11,0,126,127,0,0,[1,36468,109],[[36468,2,128]]],[0,101,11,0,102,129,130,0,[1,36577,1140],[[37717,2,131]]],[0,132,22,0,133,134,0,0,[1,37717,2],[]],[0,109,22,0,110,135,0,0,[1,37719,0],[[37719,2,131]]],[0,94,11,0,95,129,0,0,[1,37719,93],[[37720,2,136]]],[0,14,11,0,15,137,0,0,[1,37812,16],[[37813,2,17],[37813,2,18],[37813,2,19]]],[0,101,11,0,102,138,139,0,[1,37829,37],[[37866,2,140]]],[0,141,22,0,142,143,0,0,[1,37868,0],[]],[0,77,11,0,78,144,0,0,[1,37868,25],[]],[0,94,11,0,95,145,0,0,[1,37893,125],[[37893,2,146]]],[0,54,22,0,55,147,0,0,[1,38019,1215],[[0,148,11,0,149,150,0,0,[1,38019,1215],[[39234,2,151]]]]]]],[0,113,85,0,0,0,0,0,[1,39235,2141],[[0,114,22,0,115,116,0,0,[1,39235,2002],[[41237,2,117]]],[0,77,11,0,78,118,0,0,[1,41237,24],[]],[0,94,11,0,95,119,0,0,[1,41262,113],[[41263,2,120]]]]],[0,152,85,0,0,0,0,0,[1,41376,3203],[[0,77,11,0,78,153,0,0,[1,41377,893],[]],[0,101,11,0,102,154,155,0,[1,42271,36],[[42307,2,156]]],[0,132,22,0,133,157,0,0,[1,42307,1],[]],[0,109,22,0,110,158,0,0,[1,42308,1],[[42309,2,156]]],[0,94,11,0,95,159,0,0,[1,42309,134],[[42310,2,160]]],[0,77,11,0,78,161,0,0,[1,42443,35],[]],[0,94,11,0,95,162,0,0,[1,42478,118],[[42479,2,163]]],[0,164,11,0,165,166,0,0,[1,42596,33],[[42629,2,167]]],[0,168,11,0,169,170,0,0,[1,42630,1828],[]],[0,77,11,0,78,171,0,0,[1,44458,31],[]],[0,94,11,0,95,172,0,0,[1,44489,90],[[44491,2,173]]]]],[0,174,85,0,0,0,0,0,[1,44579,3567],[[0,175,176,0,0,0,0,0,[1,44579,633],[[0,77,11,0,78,177,0,0,[1,44579,28],[]],[0,94,11,0,95,178,0,0,[1,44608,604],[[44608,2,179]]]]],[0,77,11,0,78,180,0,0,[1,45212,807],[]],[0,125,11,0,126,181,0,0,[1,46019,191],[[46019,2,182]]],[0,94,11,0,95,183,0,0,[1,46210,137],[[46210,2,184]]],[0,168,11,0,169,185,0,0,[1,46347,164],[]],[0,94,11,0,95,186,0,0,[1,46511,1635],[[46511,2,187]]]]],[0,188,85,0,0,0,0,0,[1,48147,19475],[[0,87,11,0,88,189,0,0,[1,48148,7070],[]],[0,114,22,0,115,116,0,0,[1,55218,2003],[[57221,2,117]]],[0,94,11,0,95,190,0,0,[1,57221,277],[[57221,2,191]]],[0,77,11,0,78,192,0,0,[1,57498,47],[]],[0,164,11,0,165,193,0,0,[1,57545,5061],[[62606,2,194]]],[0,164,11,0,165,195,0,0,[1,62610,5012],[[67622,2,196]]],[0,132,22,0,133,197,0,0,[1,67622,0],[]]]],[2,198,9,0,0,0,0,0,[1,67622,2279],[[0,114,22,0,115,116,0,0,[1,67631,2000],[[69631,2,117]]],[0,25,22,0,26,199,0,0,[1,69631,265],[[0,199,30,0,200,0,0,0,[1,69632,264],[[69896,2,201]]]]],[0,37,22,0,38,40,202,0,[1,69896,1],[[69897,2,203]]],[0,37,22,0,38,204,205,0,[1,69897,0],[[69897,2,206]]],[0,25,22,0,26,207,0,0,[1,69897,4],[[0,208,209,0,210,211,0,0,[1,69897,3],[[69900,2,212]]]]]]]]]],[[1,213,214,0,0,215,0,0,[1,675,21366],[[0,216,11,0,217,218,0,0,[1,683,5283],[[684,2,219]]],[0,220,11,0,221,0,0,0,[1,5966,39],[]],[0,125,11,0,126,222,0,0,[1,6005,188],[[6014,2,223]]],[0,224,11,0,225,226,0,0,[1,6193,159],[[6208,2,227],[6254,2,228],[6352,2,229]]],[0,114,22,0,115,13,0,0,[1,6352,1000],[[7352,2,230]]],[0,77,11,0,78,231,0,0,[1,7352,25],[]],[0,94,11,0,95,231,0,0,[1,7377,281],[[7379,2,232]]],[0,77,11,0,78,233,0,0,[1,7659,9064],[]],[0,54,22,0,55,234,235,0,[1,16723,4937],[[0,77,11,0,78,236,0,0,[1,16723,4937],[]],[21660,2,237]]],[0,21,22,0,23,238,0,0,[1,21661,118],[[0,94,11,0,95,239,0,0,[1,21661,118],[[21662,2,240]]]]],[0,77,11,0,78,241,0,0,[1,21779,253],[]],[0,242,11,0,243,244,0,0,[1,22032,9],[[22040,2,245]]]]],[2,246,11,0,247,0,0,0,[1,69902,2313],[]]],[1,1,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*LinkIncidentToPeopleTestSuite","*C:\\Users\\Asus\\PycharmProjects\\Synapse\\Tests\\LinkIncidentToPeopleTestSuite.robot","*Tests/LinkIncidentToPeopleTestSuite.robot","*<p>test cases for Link Incidents to people\x3c/p>","*LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page","*<p>verify user should able to unlink incident from people preview page(suspect)  and verify it in incident detail page\x3c/p>","*LPI_UnlinkIncidentFromPeople","*Go To Home Page","*General","*Set Selenium Implicit Wait","*Selenium2Library","*<p>Sets the implicit wait value used by Selenium.\x3c/p>","*1","*Press Keys","*<p>Simulates the user pressing key(s) to an element or on the active browser.\x3c/p>","*None    ESC","*Sending key(s) ('ESC',) to page.","*Pressing special key ESCAPE to browser.","*Releasing special key ESCAPE.","*Start Test Case Recording","*Run Keyword If","*BuiltIn","*<p>Runs the given keyword with the given arguments, if <code>condition\x3c/code> is true.\x3c/p>","eNpTV6kODXaND4h0D/GuVbe1VQ8pKk1VVwCCotI8hezUyvL8ohSFxLwUhcz0vPyiVIXUoqL8IpC8Z25BflGJgk9mUlFiUSVIJDi5KDU1zzmxAEmsGCxWnJFfEp+bn1Kak2obUAm0CiTl6hPsSh2LAAZMQc4=","*Run Keyword And Ignore Error","*<p>Runs the given keyword with the given arguments and ignores possible error.\x3c/p>","*Import Library    ScreenCapLibrary","*Import Library","*<p>Imports a library with the given name and optional arguments.\x3c/p>","*ScreenCapLibrary","eNqFjjFrwzAQhXf/ituSDjY12byVtCEB1zXES0HLWb44orJOnJQS59dXbeliAt2O7773eIfJs0TjRrCmF5QZVkctRG6Lvv4lKzihsTRU8MrDxVLDcccXN7yIsFTQMEw/HBxONNzJZ52gph71B6wnDhGENLkIGq0FiyE+VBmkHkdZ+97t35r2qdt/o22l2jme2W3KUqVa42NQwj3Hgq60FPzfVdyMXz6f6zosWdq3QHcMFUyk3KfxOFL4V1CfPV/Rm7wsHnM/b4o0h8bxC4dfeBo=","*Get Current Date","*DateTime","*<p>Returns current local or UTC time with an optional increment.\x3c/p>","*result_format=%m_%d_%H_%M_%S","*${Current_Time}","*${Current_Time} = 12_11_17_49_53","*Set Variable","*<p>Returns the given values which can then be assigned to a variables.\x3c/p>","*${TEST NAME}_${Current_Time}","*${recording_file}","*${recording_file} = LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_11_17_49_53","*start video recording    alias=None    name=${recording_file}    fps=None    size_percentage=0.8    embed=True    embed_width='800px'    monitor=0","*start video recording","*alias=None    name=${recording_file}    fps=None    size_percentage=0.8    embed=True    embed_width='800px'    monitor=0","*No keyword with name 'start video recording' found.","*Set Test Variable","*<p>Makes a variable available everywhere within the scope of the current test.\x3c/p>","*${recording_file} = None","*Go To","*<p>Navigates the current browser window to the provided <code>url\x3c/code>.\x3c/p>","*${DASHBOARD_PAGE_URL.${env}}","eNrzL0jNy8xLVygtylFQt0lUyChKTbNVyigpKSi20tdPzEvMqSwuKU0s0SsuSUwHKtSrysxL1isGCqbmFusrw1TopyQWZyTlJxalKNlRoNlGP9FOHQCd0zYt","*Run Keyword And Return Status","*<p>Runs the given keyword with given arguments and returns the status as a Boolean value.\x3c/p>","*element should be visible    ${DASHBOARD_CLOSE_BUTTON}","*${status}","*Element Should Be Visible","*<p>Verifies that the element identified by <code>locator\x3c/code> is visible.\x3c/p>","*${DASHBOARD_CLOSE_BUTTON}","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-8435.png\"><img src=\"selenium-screenshot-8435.png\" width=\"800px\">\x3c/a>","*Element with locator 'id=btn-slide-out-close' not found.","*${status} = False","*'${status}'=='True'    Execute JavaScript    document.evaluate(\"//*[@id='btn-slide-out-close']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()","*element should be visible    ${DISCARD_BUTTON}","*${dstatus}","*${DISCARD_BUTTON}","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-8436.png\"><img src=\"selenium-screenshot-8436.png\" width=\"800px\">\x3c/a>","*Element with locator 'xpath=//button[normalize-space()='Discard']' not found.","*${dstatus} = False","*'${dstatus}'=='True'    Execute JavaScript    document.evaluate(\"//button[normalize-space()='Discard']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()","*element should be visible    ${YES_LEAVE_OPTION}","*${YES_LEAVE_OPTION}","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-8437.png\"><img src=\"selenium-screenshot-8437.png\" width=\"800px\">\x3c/a>","*Element with locator 'xpath=//button[text()='Yes, Leave']' not found.","*'${dstatus}'=='True'    Execute JavaScript    document.evaluate(\"//button[text()='Yes, Leave']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()","*Wait Until Element Is Visible","*<p>Waits until the element <code>locator\x3c/code> is visible.\x3c/p>","*${DASHBOARD_HEADER}    30    Failed to go to dashboard page after 30 secs","*5","*Capture Page Screenshot","*<p>Takes a screenshot of the current page and embeds it into a log file.\x3c/p>","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-8438.png\"><img src=\"selenium-screenshot-8438.png\" width=\"800px\">\x3c/a>","*Navigate to People Dashboard Page and Verify the People data is loaded","*LinkIncidentToPeopleKeywords","*${Peoples_dashboard_page}    15    People dashboard page is not visible","*Wait Until Page Contains Element","*<p>Waits until the element <code>locator\x3c/code> appears on the current page.\x3c/p>","*${People_dashboard_page_title}    15    People dashboard page header is not visible","*${People_widget}    20    People widget is not visible","*${People_data}    30    people data was not loaded","*Click On People To Open the Preview Page","*${People_data}    30    People data is not visible on the people dashboard page","*Click Element","*<p>Click the element identified by <code>locator\x3c/code>.\x3c/p>","*${People_data}","*Clicking element 'xpath:(//div[@class='grid-view-img ng-star-inserted'])[1]'.","*${People_preview_page}    15    People preview page is not visible","*${People_name}    10    People name is not visible on the people preview page","*Extract the person name which has to be unliked from people preview page","*Get Text","*<p>Returns the text value of the element identified by <code>locator\x3c/code>.\x3c/p>","*${People_first_name}","*${unlink_people_first_name}","*${unlink_people_first_name} = User","*${People_last_name}","*${unlink_people_last_name}","*${unlink_people_last_name} = Sus 2","*Set Suite Variable","*<p>Makes a variable available everywhere within the scope of the current suite.\x3c/p>","*${unlink_people_first_name}    ${unlink_people_first_name}","*${unlink_people_last_name}    ${unlink_people_last_name}","*Click On Link/Unlink Incident Button","*Sleep","*<p>Pauses the test executed for the given time.\x3c/p>","*2","*Slept 2 seconds.","*${Link/Unlink_button}    10    Link/Unlink button is not visible on the people preview page","*${Link/Unlink_button}","*Clicking element '<a href=\"xpath://span[@id='spn-link-unlink-people\">xpath://span[@id='spn-link-unlink-people\x3c/a>']'.","*Link the incident to the people","*${Incidents_dropdown}    10    Incidents dropdown is not visible on the link/unlink incident on people preview page","*${Incidents_dropdown}","eNpzzslMzs7MS1dIzUnNTc0rUVC3SVTIKEpNs1WqKEgsybDS169K0S0GyiaX6JYZRTtkptiqQ7k5mXnZupl5yZkpQI1KdqSpt9FPtFOPVdcDAIa6LPg=","*Input Text","*<p>Types the given <code>text\x3c/code> into the text field identified by <code>locator\x3c/code>.\x3c/p>","*${Incident_dropdown_search_box}    ${AA_category_incident}","*Typing text 'AA00' into text field '<a href=\"xpath://input[@placeholder='Search\">xpath://input[@placeholder='Search\x3c/a>']'.","*${Alarm_activations_incident_reference_number}","*${Selected_incident_reference_number}","*${Selected_incident_reference_number} = AA009983","*Log To Console","*<p>Logs the given message to the console.\x3c/p>","*Selected incident reference number is: ${Selected_incident_reference_number}","*${Selected_incident_reference_number}    ${Selected_incident_reference_number}","*Clicking element 'xpath:(//div[@class='zd-select-option'])[1]'.","*${None}    ESC","eNqzSVTIKEpNs1WqKEgsybDS1y8uSMyLdkjOSSwutlXPTSpO1i1JrShJy0zNSdEtSUwH85TsSFFto59opwCWy00sSS3KTMxRjwUA/toq5Q==","*${Selected_incident_reference_number_shown_after_selection}","*${Selected_incident_reference_number_shown_after_selection} = AA009983","*Should Be Equal","*<p>Fails if the given objects are unequal.\x3c/p>","eNqNzDEOgCAQRNGrTMGNPMBGYYgkuiSAsTDeXV2DtVttMe+7Y+BC3xgkqU+B2qQwslA9Rbd1Yjlxn/sxlDrnXWWM7fltnrIa7xgd48N4MVKF5gZrwBr4GhcOvT/Y","*${Link_button}    10    Link button is not visible on the link/unlink incident on people preview page","*${Link_button}","*Clicking element '<a href=\"xpath://button[@id='btn-slide-out-confirm\">xpath://button[@id='btn-slide-out-confirm\x3c/a>']'.","*Page Should Contain    ${Event_linked_successfully_toast_message}","*Page Should Contain","*<p>Verifies that current page contains <code>text\x3c/code>.\x3c/p>","*${Event_linked_successfully_toast_message}","*Current page contains text 'Event linked successfully'.","*Unlink the incident from people(suspect) preview page","*${first_incident_to_unlink}    10    Incident to unlink is not visible on the link/unlink incident on people preview page","*${first_incident_to_unlink}","*${incident_to_unlink}","*${incident_to_unlink} = AA009983","*the incident selected to unlink is: ${incident_to_unlink}","*${incident_to_unlink}    ${incident_to_unlink}","*${first_incident_delink_button}","*Clicking element '<a href=\"xpath://button[@id='btn-event-delink-0\">xpath://button[@id='btn-event-delink-0\x3c/a>']'.","*${delink_confirmation_dialog_box}    10    Confirmation dialog is not visible after clicking delink button","*${delink_yes_option}","*Clicking element '<a href=\"xpath://button[text()='Yes\">xpath://button[text()='Yes\x3c/a>']'.","*Element Should Not Be Visible","*<p>Verifies that the element identified by <code>locator\x3c/code> is NOT visible.\x3c/p>","*xpath=//*[contains(text(), '${incident_to_unlink}')]","*Element 'xpath=//*[contains(text(), 'AA009983')]' exists but is not displayed.","*Wait Until Page Contains","*<p>Waits until <code>text\x3c/code> appears on the current page.\x3c/p>","*${Event_unlinked_successfully_toast_message}","*${Cancel_link_button}    10    Cancel button is not visible on the link/unlink incident on people preview page","*${Cancel_link_button}","*Clicking element '<a href=\"xpath://button[@id='btn-slide-out-close\">xpath://button[@id='btn-slide-out-close\x3c/a>']'.","*Navigate to Search Module and search for the unlinked people incident","*Navigate To Search Page","*SearchKeywords","*${SEARCH_MODULE}    5    Search mobule is not shown","*${SEARCH_MODULE}","*Clicking element 'id=navbar-Search'.","*${SEARCH_TEXTFIELD}    15    Search text field is not visible","*${SEARCH_TEXTFIELD}    ${incident_to_unlink}","*Typing text 'AA009983' into text field 'xpath=//input[@id='txt-global-search']'.","*${search_button}","*Clicking element 'xpath=//button[@id='btn-global-search']'.","*${incident_to_unlink}    15    Search results are not shown","*${search_module_view_event_button}","eNqtzEEOwiAQAMCvkF72hNxJaZr4jKaHFVbZCCuBrfX5+gjnAXMtHJ8sD0OFKokamNHkTvcwfRpq9s6NhrKtseAYASqqvR2qL7Fnx9aow+5i5pK8p7qtnAKwRE6/yw7CHrN9M53T8tdudrjADpcvvUlEOA==","*Go to Involved Entities Tab and verify the linked suspect absence","*${incident_view_header}    15    Incident view header is not visible","*${involved_entities_tab}","*Clicking element '<a href=\"xpath://div[@class='mat-tooltip-trigger\">xpath://div[@class='mat-tooltip-trigger\x3c/a> normal-text ng-star-inserted' and text()='Involved Entities']'.","*${People_widget}    10    People widget is not visible","*xpath=//*[contains(text(), '${unlink_people_first_name}')]","*Element 'xpath=//*[contains(text(), 'User')]' exists but is not displayed.","*xpath=//*[contains(text(), '${unlink_people_last_name}')]","*Element 'xpath=//*[contains(text(), 'Sus 2')]' did not exist.","*Unlinked person ${unlink_people_first_name} ${unlink_people_last_name} is not visible under Involved Entities tab of the unlinked incident as expected","*Stop Test Case Recording","*Stop Video Recording","*No keyword with name 'Stop Video Recording' found.","*${original_file}","*${original_file} = LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_11_17_49_53","*${recording_file}_${test_status}","*${new_file}","*${new_file} = LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_11_17_49_53_PASS","*Move File    ${original_file}_1.webm    ./Test_Recordings/${new_file}.webm","*Move File","*OperatingSystem","*<p>Moves the source file into the destination.\x3c/p>","*${original_file}_1.webm    ./Test_Recordings/${new_file}.webm","*Source file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_11_17_49_53_1.webm' does not exist.","*Open the synapse analyst url","*WidgetExportKeywords","*Open Browser","*<p>Opens a new browser instance to the optional <code>url\x3c/code>.\x3c/p>","*${URL}    ${BROWSER}","eNqdjMENgCAMAFdp9MGP/g26gjNUU8UEwbQlRqeXGfze5W6+OB95h0XKrSzg1ijlZAdWYCFlqJLABYIovI1dNLt0QKRM6VGrZF6N9nbw75FXrw3yqdgjVYuYSlPd9KcKSJPzH/tSOXc=","*Maximize Browser Window","*<p>Maximizes current browser window.\x3c/p>","*${LOCATOR_EMAIL}    ${EMAIL_LOGIN}","*Typing text 'aditya.sahay+694@zinc.systems' into text field 'id:email'.","*Input Password","*<p>Types the given password into the text field identified by <code>locator\x3c/code>.\x3c/p>","*${LOCATOR_PASSWORD}    ${PASSWORD}","*Typing password into text field 'id:password'.","*Temporally setting log level to: NONE","*Slept 1 second.","*${LOCATOR_LOGIN_BUTTON}","*Clicking element 'id:loginButton'.","*${LOCATOR_APP_LOGO}    45","*Wait Until Element Is Visible    ${LOCATOR_ALLOW_LOCATION_BUTTON}    10","*${element_present}","*${LOCATOR_ALLOW_LOCATION_BUTTON}    10","*${element_present} = True","*${element_present}    Click Element    ${LOCATOR_ALLOW_LOCATION_BUTTON}","*${LOCATOR_ALLOW_LOCATION_BUTTON}","*Clicking element 'id:btn-allow-location'.","*${LOCATOR_DASHBOARDS_HEADER}    15","*Page Should Contain Element","*<p>Verifies that element <code>locator\x3c/code> is found on the current page.\x3c/p>","*${LOCATOR_DASHBOARDS_HEADER}","*Current page contains element '<a href=\"xpath://h3[contains(text(\">xpath://h3[contains(text(\x3c/a>), 'Dashboards')]'.","*Handle any pop ups after login","*${snackbar_toast_message}    10    pop up message is not visible","*Current page contains element '<a href=\"xpath://span[@class='mat-simple-snack-bar-content\">xpath://span[@class='mat-simple-snack-bar-content\x3c/a>']'.","*${Dismiss_toast_message_button}","*Clicking element '<a href=\"xpath://button[@class='mat-focus-indicator\">xpath://button[@class='mat-focus-indicator\x3c/a> mat-button mat-button-base']/child::span[text()='Dismiss']'.","*Close Browser","*<p>Closes the current browser.\x3c/p>","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\General.robot' on line 88: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\General.robot' on line 95: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\General.robot' on line 239: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 25: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 305: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 324: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 331: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 338: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 345: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 352: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 359: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 392: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 398: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 404: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 410: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 416: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 423: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 430: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 437: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 442: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 447: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 452: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 457: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 462: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 467: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 475: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 480: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 485: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 496: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 507: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 518: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 529: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 540: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 551: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 564: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 578: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 591: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 598: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 603: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 608: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 613: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 619: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 625: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 630: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.","*Error in file 'C:\\Users\\Asus\\PycharmProjects\\Synapse\\Resources\\Keywords\\DataComparisonKeywords.robot' on line 1430: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead."]);
+window.output["strings"] = window.output["strings"].concat(["*","*LinkIncidentToPeopleTestSuite","*C:\\Users\\adity\\PycharmProjects\\Synapse_new\\Tests\\LinkIncidentToPeopleTestSuite.robot","*Tests/LinkIncidentToPeopleTestSuite.robot","*<p>test cases for Link Incidents to people\x3c/p>","*LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page","*<p>verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page\x3c/p>","*LPI_UnlinkIncidentFromPeopleSuspect","*Go To Home Page","*General","*Set Selenium Implicit Wait","*Selenium2Library","*<p>Sets the implicit wait value used by Selenium.\x3c/p>","*1","*Press Keys","*<p>Simulates the user pressing key(s) to an element or on the active browser.\x3c/p>","*None, ESC","*Sending key(s) ('ESC',) to page.","*Pressing special key ESCAPE to browser.","*Releasing special key ESCAPE.","*Start Test Case Recording","*Run Keyword If","*BuiltIn","*<p>Runs the given keyword with the given arguments, if <code>condition\x3c/code> is true.\x3c/p>","eNpTV6kODXaND4h0D/GuVbe1VQ8pKk1V11EoKs1TyE6tLM8vSlFIzEtRyEzPyy9KVUgtKsov0lHwzC3ILypR8MlMKkosqtRRCE4uSk3Nc04sgIsUg0WKM/JL4nPzU0pzUm0DKoFW6Ci4+gS7Umo8AFYpQC4=","*Run Keyword And Ignore Error","*<p>Runs the given keyword with the given arguments and ignores possible error.\x3c/p>","*Import Library, ScreenCapLibrary","*Import Library","*<p>Imports a library with the given name and optional arguments.\x3c/p>","*ScreenCapLibrary","*Get Current Date","*DateTime","*<p>Returns current local or UTC time with an optional increment.\x3c/p>","*result_format=%m_%d_%H_%M_%S","*${Current_Time}","*${Current_Time} = 12_29_16_37_59","*Set Variable","*<p>Returns the given values which can then be assigned to a variables.\x3c/p>","*${TEST NAME}_${Current_Time}","*${recording_file}","*${recording_file} = LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_29_16_37_59","*start video recording, alias=None, name=${recording_file}, fps=None, size_percentage=0.8, embed=True, embed_width='800px', monitor=0","*Start Video Recording","*<p>Starts the recording of a video in the background with the specified <code>name\x3c/code>. The recording can be stopped by calling the `Stop Video Recording` keyword.\x3c/p>","*alias=None, name=${recording_file}, fps=None, size_percentage=0.8, embed=True, embed_width='800px', monitor=0","*Automatically setting a fps of 8.5","*Set Test Variable","*<p>Makes a variable available everywhere within the scope of the current test.\x3c/p>","*${recording_file} = None","*Go To","*<p>Navigates the current browser window to the provided <code>url\x3c/code>.\x3c/p>","*${DASHBOARD_PAGE_URL.${env}}","eNrzL0jNy8xLVygtylFQt0lUyChKTbNVyigpKSi20tdPzEvMqSwuKU0s0SsuSUwHKtSrysxL1isGCqbmFusrw1TopyQWZyTlJxalKNlRoNlGP9FOHQCd0zYt","*Run Keyword And Return Status","*<p>Runs the given keyword with given arguments and returns the status as a Boolean value.\x3c/p>","*element should be visible, ${DASHBOARD_CLOSE_BUTTON}","*${status}","*Element Should Be Visible","*<p>Verifies that the element identified by <code>locator\x3c/code> is visible.\x3c/p>","*${DASHBOARD_CLOSE_BUTTON}","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-8237.png\"><img src=\"selenium-screenshot-8237.png\" width=\"800px\">\x3c/a>","*Element with locator 'id=btn-slide-out-close' not found.","*${status} = False","*'${status}'=='True', Execute JavaScript, document.evaluate(\"//*[@id='btn-slide-out-close']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()","*element should be visible, ${DISCARD_BUTTON}","*${dstatus}","*${DISCARD_BUTTON}","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-8238.png\"><img src=\"selenium-screenshot-8238.png\" width=\"800px\">\x3c/a>","*Element with locator 'xpath=//button[normalize-space()='Discard']' not found.","*${dstatus} = False","*'${dstatus}'=='True', Execute JavaScript, document.evaluate(\"//button[normalize-space()='Discard']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()","*element should be visible, ${YES_LEAVE_OPTION}","*${YES_LEAVE_OPTION}","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-8239.png\"><img src=\"selenium-screenshot-8239.png\" width=\"800px\">\x3c/a>","*Element with locator 'xpath=//button[text()='Yes, Leave']' not found.","*'${dstatus}'=='True', Execute JavaScript, document.evaluate(\"//button[text()='Yes, Leave']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()","*Wait Until Element Is Visible","*<p>Waits until the element <code>locator\x3c/code> is visible.\x3c/p>","*${DASHBOARD_HEADER}, 30, Failed to go to dashboard page after 30 secs","*5","*Capture Page Screenshot","*<p>Takes a screenshot of the current page and embeds it into a log file.\x3c/p>","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-8240.png\"><img src=\"selenium-screenshot-8240.png\" width=\"800px\">\x3c/a>","*Navigate to People Dashboard Page and Verify the People data is loaded","*LinkIncidentToPeopleKeywords","*${Peoples_dashboard_page}, 15, People dashboard page is not visible","*Wait Until Page Contains Element","*<p>Waits until the element <code>locator\x3c/code> appears on the current page.\x3c/p>","*${People_dashboard_page_title}, 15, People dashboard page header is not visible","*${People_widget}, 20, People widget is not visible","*${People_data}, 30, people data was not loaded","*Click On People To Open the Preview Page","*${People_data}, 30, People data is not visible on the people dashboard page","*Click Element","*<p>Click the element identified by <code>locator\x3c/code>.\x3c/p>","*${People_data}","*Clicking element 'xpath:(//div[@class='grid-view-img ng-star-inserted'])[1]'.","*${People_preview_page}, 15, People preview page is not visible","*${People_name}, 10, People name is not visible on the people preview page","*Extract the person name which has to be unliked from people preview page","*Get Text","*<p>Returns the text value of the element identified by <code>locator\x3c/code>.\x3c/p>","*${People_first_name}","*${unlink_people_first_name}","*${unlink_people_first_name} = Edited Automation Firstname_12-29_10-44-00","*${People_last_name}","*${unlink_people_last_name}","*${unlink_people_last_name} = Edited Automation Lastname_12-29_10-44-00","*Set Suite Variable","*<p>Makes a variable available everywhere within the scope of the current suite.\x3c/p>","*${unlink_people_first_name}, ${unlink_people_first_name}","*${unlink_people_last_name}, ${unlink_people_last_name}","*Click On Link/Unlink Incident Button","*Sleep","*<p>Pauses the test executed for the given time.\x3c/p>","*2","*Slept 2 seconds","*${Link/Unlink_button}, 10, Link/Unlink button is not visible on the people preview page","*${Link/Unlink_button}","*Clicking element '<a href=\"xpath://span[@id='spn-link-unlink-people\">xpath://span[@id='spn-link-unlink-people\x3c/a>']'.","*Link the incident to the people","*${Incidents_dropdown}, 10, Incidents dropdown is not visible on the link/unlink incident on people preview page","*${Incidents_dropdown}","eNpzzslMzs7MS1dIzUnNTc0rUVC3SVTIKEpNs1WqKEgsybDS169K0S0GyiaX6JYZRTtkptiqQ7k5mXnZupl5yZkpQI1KdqSpt9FPtFOPVdcDAIa6LPg=","*Input Text","*<p>Types the given <code>text\x3c/code> into the text field identified by <code>locator\x3c/code>.\x3c/p>","*${Incident_dropdown_search_box}, ${AA_category_incident}","*Typing text 'AA00' into text field '<a href=\"xpath://input[@placeholder='Search\">xpath://input[@placeholder='Search\x3c/a>']'.","*${Alarm_activations_incident_reference_number}","*${Selected_incident_reference_number}","*${Selected_incident_reference_number} = AA009983","*Log To Console","*<p>Logs the given message to the console.\x3c/p>","*Selected incident reference number is: ${Selected_incident_reference_number}","*${Selected_incident_reference_number}, ${Selected_incident_reference_number}","*Clicking element 'xpath:(//div[@class='zd-select-option'])[1]'.","*${None}, ESC","eNqzSVTIKEpNs1WqKEgsybDS1y8uSMyLdkjOSSwutlXPTSpO1i1JrShJy0zNSdEtSUwH85TsSFFto59opwCWy00sSS3KTMxRjwUA/toq5Q==","*${Selected_incident_reference_number_shown_after_selection}","*${Selected_incident_reference_number_shown_after_selection} = AA009983","*Should Be Equal","*<p>Fails if the given objects are unequal.\x3c/p>","eNqNzDEOgCAQRNGrTEHpbTzARmGIJLokgLEw3l3FQG03xbxvzpErbaGToDY4apFEz0S1FN23mekaYH7cJC/xUJl8eXe9h6gPbhSNolN8FCFDY0EtoBbQCzd6Zj9w","*${Link_button}, 10, Link button is not visible on the link/unlink incident on people preview page","*${Link_button}","*Clicking element '<a href=\"xpath://button[@id='btn-slide-out-confirm\">xpath://button[@id='btn-slide-out-confirm\x3c/a>']'.","*Page Should Contain, ${Event_linked_successfully_toast_message}","*Page Should Contain","*<p>Verifies that current page contains <code>text\x3c/code>.\x3c/p>","*${Event_linked_successfully_toast_message}","*Current page contains text 'Event linked successfully'.","*Unlink the incident from people(suspect) preview page","*${first_incident_to_unlink}, 10, Incident to unlink is not visible on the link/unlink incident on people preview page","*${first_incident_to_unlink}","*${incident_to_unlink}","*${incident_to_unlink} = SEC015592","*the incident selected to unlink is: ${incident_to_unlink}","*${incident_to_unlink}, ${incident_to_unlink}","*${first_incident_delink_button}","*Clicking element '<a href=\"xpath://button[@id='btn-event-delink-0\">xpath://button[@id='btn-event-delink-0\x3c/a>']'.","*${delink_confirmation_dialog_box}, 10, Confirmation dialog is not visible after clicking delink button","*${delink_yes_option}","*Clicking element '<a href=\"xpath://button[text()='Yes\">xpath://button[text()='Yes\x3c/a>']'.","*Element Should Not Be Visible","*<p>Verifies that the element identified by <code>locator\x3c/code> is NOT visible.\x3c/p>","*xpath=//*[contains(text(), '${incident_to_unlink}')]","*Element 'xpath=//*[contains(text(), 'SEC015592')]' exists but is not displayed.","*Wait Until Page Contains","*<p>Waits until <code>text\x3c/code> appears on the current page.\x3c/p>","*${Event_unlinked_successfully_toast_message}","*${Cancel_link_button}, 10, Cancel button is not visible on the link/unlink incident on people preview page","*${Cancel_link_button}","*Clicking element '<a href=\"xpath://button[@id='btn-slide-out-close\">xpath://button[@id='btn-slide-out-close\x3c/a>']'.","*Navigate to Search Module and search for the unlinked people incident","*Navigate To Search Page","*SearchKeywords","*${SEARCH_MODULE}, 5, Search mobule is not shown","*${SEARCH_MODULE}","*Clicking element 'id=navbar-Search'.","*${SEARCH_TEXTFIELD}, 15, Search text field is not visible","*${SEARCH_TEXTFIELD}, ${incident_to_unlink}","*Typing text 'SEC015592' into text field 'xpath=//input[@id='txt-global-search']'.","*${search_button}","*Clicking element 'xpath=//button[@id='btn-global-search']'.","*${incident_to_unlink}, 15, Search results are not shown","*${search_module_view_event_button}","eNqtzEEOwiAQAMCvkF72hNxJaZr4jKaHFVbZCCuBrfX5+gjnAXMtHJ8sD0OFKokamNHkTvcwfRpq9s6NhrKtseAYASqqvR2qL7Fnx9aow+5i5pK8p7qtnAKwRE6/yw7CHrN9M53T8tdudrjADpcvvUlEOA==","*Go to Involved Entities Tab and verify the linked suspect absence","*${incident_view_header}, 15, Incident view header is not visible","*${involved_entities_tab}","*Clicking element '<a href=\"xpath://div[@class='mat-tooltip-trigger\">xpath://div[@class='mat-tooltip-trigger\x3c/a> normal-text ng-star-inserted' and text()='Involved Entities']'.","*${People_widget}, 10, People widget is not visible","*xpath=//*[contains(text(), '${unlink_people_first_name}')]","*Element 'xpath=//*[contains(text(), 'Edited Automation Firstname_12-29_10-44-00')]' did not exist.","*xpath=//*[contains(text(), '${unlink_people_last_name}')]","*Element 'xpath=//*[contains(text(), 'Edited Automation Lastname_12-29_10-44-00')]' did not exist.","*Unlinked person ${unlink_people_first_name} ${unlink_people_last_name} is not visible under Involved Entities tab of the unlinked incident as expected","*Stop Test Case Recording","*Stop Video Recording","eNptkUFuhDAMRa/iAyDmAojlSLPoqpW6HBliGKshjuLAaG5fE8qUBYskIP3/8/zTxPYzS1TID4KFHQkk6iU5DiPYmUijhPKXpYhGXihA04ujFj2jNpfyDRgcjBQoYaYtb2BPwAG+qfuAQdKEuYbbAEHO/KygkXoemFxV/B41g0TLdAeqJ3sPHUHvRcmVQBMnArQ1iW1vrZo4P0qW4mSK9T7bPUgxTWdhGxpNHbn3aGmcJwoZnmZXymsXm+wrzbSr/ivcUx1r9PgyfGuhTCRjaaWG65xW6pW3Ai40f5GKC92z3M38s0dHTMafKZWWjgBX9LoTVCcIZQ5nBOvz4ILssdte5cgDEvyrbi6x/QXW67sa","eNrVj00KgzAQha8SAsVd/SltFdR9oYveIEQda2hMQn603r6jSKFH6Op9k3m8ySs5GSz0Fb0/bixJczaBFf1yyJLgwKK4QQfZIfBGAorX605JoV4IQrWiA+URe6tHFAPabEZjYRIwr8Sf+JC74Ay0aC3WNLVmfo8Jv4X9JnbguZB7AEszlhUsvbDTlZ0RjjM0I63LCe2azKLzQ0WjPEnMO6KEB4//4EtdOh1sC8TZ9m9LEr8YqOjWNN5rx9uEyusPiB2SDQ==","*${original_file}","*${original_file} = LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_29_16_37_59","*${recording_file}_${test_status}","*${new_file}","*${new_file} = LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page_12_29_16_37_59_PASS","*Move File, ${original_file}_1.webm, ./Test_Recordings/${new_file}.webm","*Move File","*OperatingSystem","*<p>Moves the source file into the destination.\x3c/p>","*${original_file}_1.webm, ./Test_Recordings/${new_file}.webm","eNrVkU9Lw0AQxb/K0Ev10piK/0otiCdBIRi9LSzT7KQZTXaXnU1Cvr3bKngWL+1tmJk3v3m8FzeQgZpbgjq4DuZrhCZQfT/b91ZZ9rhS70JBFBqOkyqmqsHQFcF9UBVFlZNFL6Qtjeq5eNIX+a0eKHA9QZ9kII3rWwO4TYDooLct209gW7EhG7+ZnpxPYx9oYBrB447OpBefAOeA1sDPQY5J+Ks1FJHbw7rOl3p5p/NrfXmjr1KxGGnbzTYn/Pw6w818T/1PIm8kUb9S5YJhu5MjMlk8lOXfQzoBP4fcFl+GrjOU","*Open the synapse analyst url","*WidgetExportKeywords","*${URL.${env}}","*Open Browser","*<p>Opens a new browser instance to the optional <code>url\x3c/code>.\x3c/p>","*${url}, ${BROWSER}","eNqdjMENgCAMAFdp9MGP/g26gjNUU8UEwbQlRqeXGfze5W6+OB95h0XKrSzg1ijlZAdWYCFlqJLABYIovI1dNLt0QKRM6VGrZF6N9nbw75FXrw3yqdgjVYuYSlPd9KcKSJPzH/tSOXc=","*Maximize Browser Window","*<p>Maximizes current browser window.\x3c/p>","*${LOCATOR_EMAIL}, ${VALID_EMAIL.${env}}","*Typing text 'aditya.sahay+694@zinc.systems' into text field 'id:email'.","*Input Password","*<p>Types the given password into the text field identified by <code>locator\x3c/code>.\x3c/p>","*${LOCATOR_PASSWORD}, ${VALID_SYNAPSE_PASS.${env}}","*Typing password into text field 'id:password'.","*Temporally setting log level to: NONE","*Log level changed from NONE to INFO.","*Slept 1 second","*${LOCATOR_LOGIN_BUTTON}","*Clicking element 'id:loginButton'.","*${LOCATOR_APP_LOGO}, 45","*Wait Until Element Is Visible, ${LOCATOR_ALLOW_LOCATION_BUTTON}, 10","*${element_present}","*${LOCATOR_ALLOW_LOCATION_BUTTON}, 10","*${element_present} = True","*${element_present}, Click Element, ${LOCATOR_ALLOW_LOCATION_BUTTON}","*${LOCATOR_ALLOW_LOCATION_BUTTON}","*Clicking element 'id:btn-allow-location'.","*${LOCATOR_DASHBOARDS_HEADER}, 15","*Page Should Contain Element","*<p>Verifies that element <code>locator\x3c/code> is found on the current page.\x3c/p>","*${LOCATOR_DASHBOARDS_HEADER}","*Current page contains element '<a href=\"xpath://h3[contains(text(\">xpath://h3[contains(text(\x3c/a>), 'Dashboards')]'.","*Close Browser","*<p>Closes the current browser.\x3c/p>"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:41","fail":0,"label":"All Tests","pass":1,"skip":0}],[{"elapsed":"00:00:41","fail":0,"label":"LPI_UnlinkIncidentFromPeople","pass":1,"skip":0}],[{"elapsed":"00:01:12","fail":0,"id":"s1","label":"LinkIncidentToPeopleTestSuite","name":"LinkIncidentToPeopleTestSuite","pass":1,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:48","fail":0,"label":"All Tests","pass":1,"skip":0}],[{"elapsed":"00:00:48","fail":0,"label":"LPI_UnlinkIncidentFromPeopleSuspect","pass":1,"skip":0}],[{"elapsed":"00:01:12","fail":0,"id":"s1","label":"LinkIncidentToPeopleTestSuite","name":"LinkIncidentToPeopleTestSuite","pass":1,"skip":0}]];
 </script>
 <script type="text/javascript">
-window.output["errors"] = [[37,3,250],[38,3,251],[40,3,252],[607,3,253],[609,3,254],[610,3,255],[610,3,256],[611,3,257],[611,3,258],[611,3,259],[612,3,260],[612,3,261],[612,3,262],[613,3,263],[613,3,264],[613,3,265],[613,3,266],[614,3,267],[614,3,268],[614,3,269],[615,3,270],[615,3,271],[615,3,272],[615,3,273],[616,3,274],[616,3,275],[616,3,276],[617,3,277],[617,3,278],[618,3,279],[618,3,280],[619,3,281],[619,3,282],[619,3,283],[620,3,284],[620,3,285],[620,3,286],[621,3,287],[621,3,288],[621,3,289],[621,3,290],[622,3,291],[622,3,292],[622,3,293],[627,3,294]];
+window.output["errors"] = [];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1765455564190;
+window.output["baseMillis"] = 1767006456879;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 72214;
+window.output["generated"] = 72232;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
@@ -2109,7 +1834,7 @@ window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.h
 </script>
 <title></title>
 </head>
-<body data-theme="dark">
+<body>
 <div id="javascript-disabled">
   <h1>Opening Robot Framework log failed</h1>
   <ul>
@@ -2119,13 +1844,12 @@ window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.h
   </ul>
 </div>
 <script type="text/javascript">removeJavaScriptDisabledWarning();</script>
+
 <div id="header"></div>
 <div id="statistics-container"></div>
 
 <script type="text/javascript">
 $(document).ready(function() {
-    storage.init();
-    theme.init(storage);
     try {
         var topsuite = window.testdata.suite();
     } catch (error) {
@@ -2133,7 +1857,6 @@ $(document).ready(function() {
         return;
     }
     initLayout(topsuite.name, 'Log');
-    theme.reflectPreference();
     addStatistics();
     addErrors();
     addExecutionLog(topsuite);
@@ -2174,6 +1897,25 @@ function drawErrorsRecursively(errors, target) {
         // Errors may have moved scroll position. Resetting location re-scrolls.
         if (window.location.hash)
             window.location.replace(window.location.hash);
+        highlightLinkTarget();
+    }
+}
+
+function highlightLinkTarget() {
+    if (window.location.hash) {
+        var target = $(window.location.hash);
+        highlight(target);
+    }
+}
+
+function highlight(element, color) {
+    if (color === undefined)
+        color = 242;
+    if (color < 255) {
+        element.css({'background-color': 'rgb('+color+','+color+','+color+')'});
+        setTimeout(function () { highlight(element, color+1); }, 300);
+    } else {
+        element.css({'background-color': ''});
     }
 }
 
@@ -2191,6 +1933,7 @@ function makeElementVisible(id) {
             expandFailed(window.testdata.findLoaded(util.last(ids)));
             window.location.hash = id;
             document.getElementById(id).scrollIntoView();
+            highlightLinkTarget();
         }
     });
 }
@@ -2388,9 +2131,8 @@ function addExecutionLog(main) {
       <div class="element-header-left" title="${type}  {{if name}}{{html fullName}}  {{/if}}[${status}]">
         <span class="elapsed" title="Elapsed time">${times.elapsedTime}</span>
         <span class="label ${status.toLowerCase()}">${type}</span>
-        <span class="assign">{{html assign}}</span>
+        <span>{{html assign}}</span>
         <span class="name"><span class="parent-name">{{html libname}}{{if libname}} . {{/if}}</span>{{html name}}</span>
-        &nbsp;
         <span class="arg">{{html arguments}}</span>
       </div>
       <div class="element-header-right" onclick="stopPropagation(event)">
@@ -2424,12 +2166,6 @@ function addExecutionLog(main) {
           <th>Start / End / Elapsed:</th>
           <td>${times.startTime} / ${times.endTime} / ${times.elapsedTime}</td>
         </tr>
-        {{if message()}}
-        <tr>
-          <th>Message:</th>
-          <td class="message">{{html message()}}</td>
-        </tr>
-        {{/if}}
       </table>
     </div>
   </div>
@@ -2452,7 +2188,6 @@ function addExecutionLog(main) {
   <div id="log-level-selector">
   Log level:
     <select onchange="logLevelSelected(this.options[selectedIndex].value)">
-      <option value="3">WARN</option>
       <option value="2">INFO</option>
       <option value="1">DEBUG</option>
       {{if showTrace()}}<option value="0">TRACE</option>{{/if}}

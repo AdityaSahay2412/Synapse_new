@@ -2,9 +2,11 @@
 Resource    ../Resources/Variables.robot
 Resource    ../Resources/Keywords/General.robot
 Resource    ../Resources/Keywords/DashboardKeywords.robot
+Resource    ../Resources/Keywords/WidgetExportKeywords.robot
 
 
-Suite Setup      Open Browser And Login To Analyst App
+
+Suite Setup      Open The Synapse Analyst Url
 Test Setup       Go To Home Page
 Test Teardown    Stop Test Case Recording
 Suite Teardown   Close Browser

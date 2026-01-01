@@ -6,12 +6,15 @@ Resource    ../LinkIncidentToPeopleVariables.robot
 #Resource    ../Variables.robot
 Resource    General.robot
 
+
+
 *** Keywords ***
 Open the synapse analyst url
-    Open Browser    ${URL}    ${BROWSER}
+    [Arguments]    ${url}
+    Open Browser    ${url}    ${BROWSER}
     Maximize Browser Window
-    Input Text    ${LOCATOR_EMAIL}    ${EMAIL_LOGIN}
-    Input Password  ${LOCATOR_PASSWORD}    ${PASSWORD}
+    Input Text    ${LOCATOR_EMAIL}    ${VALID_EMAIL.${env}}
+    Input Password  ${LOCATOR_PASSWORD}    ${VALID_SYNAPSE_PASS.${env}}
     Sleep    1
     Wait Until Element Is Visible     ${LOCATOR_LOGIN_BUTTON}
     Click Element    ${LOCATOR_LOGIN_BUTTON}
@@ -20,7 +23,7 @@ Open the synapse analyst url
     Run Keyword If    ${element_present}    Click Element    ${LOCATOR_ALLOW_LOCATION_BUTTON}
     Wait Until Element Is Visible    ${LOCATOR_DASHBOARDS_HEADER}    15
     Page Should Contain Element    ${LOCATOR_DASHBOARDS_HEADER}
-    Handle Any Pop Ups After Login
+#    Handle Any Pop Ups After Login
 
 
 

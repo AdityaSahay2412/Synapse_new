@@ -1,13 +1,13 @@
 *** Variables ***
 
-${URL}    https://analystuat.staging.zinc.systems/#/auth/login
+&{URL}    uat=https://analystuat.staging.zinc.systems/#/auth/login    production=https://analyst.zinc.systems/#/auth/login
 ${BROWSER}    chrome
 ${EMAIL_LOGIN}    aditya.sahay+694@zinc.systems
 ${PASSWORD}    Atlassian@2412
 
-
-&{VALID_USERNAME}         uat=satish.kumar+694@zinc.systems     production=satish.kumar+702@zinc.systems
-&{VALID_PASSWORD}         uat=584TuDqvDB&P$y                    production=x4$F+FA+r3R4b7
+${env}    uat
+&{VALID_EMAIL}         uat=aditya.sahay+694@zinc.systems     production=satish.kumar+702@zinc.systems
+&{VALID_SYNAPSE_PASS}         uat=Atlassian@2412                  production=x4$F+FA+r3R4b7
 
 
 ${LOCATOR_EMAIL}    id:email

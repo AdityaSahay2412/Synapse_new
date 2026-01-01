@@ -34,6 +34,7 @@ class MyLibrary:
     def chrome_open(self,DOWNLOAD_PATH, headless=True):
         chrome_options = webdriver.ChromeOptions()
 
+
         # Exclude automation switch
         chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
 

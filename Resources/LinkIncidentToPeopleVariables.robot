@@ -67,4 +67,3 @@ ${delink_yes_option}    xpath://button[text()='Yes']
 ${victim_tab_under_involved_entities}    xpath://mat-chip/child::div/following-sibling::span[text()='Impacted Persons']
 ${snackbar_toast_message}    xpath://span[@class='mat-simple-snack-bar-content']
 ${Dismiss_toast_message_button}    xpath://button[@class='mat-focus-indicator mat-button mat-button-base']/child::span[text()='Dismiss']
-${POPUP_HANDLED}    False

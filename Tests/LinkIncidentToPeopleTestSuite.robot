@@ -3,10 +3,10 @@ Documentation    test cases for Link Incidents to people
 Resource    ../Resources/Keywords/General.robot
 Resource    ../Resources/Keywords/WidgetExportKeywords.robot
 Resource    ../Resources/Keywords/LinkIncidentToPeopleKeywords.robot
-Resource    ../Resources/Keywords/DataComparisonKeywords.robot
-Resource    ../Resources/Keywords/DashboardKeywords.robot
+#Resource    ../Resources/Keywords/DataComparisonKeywords.robot
+#Resource    ../Resources/Keywords/DashboardKeywords.robot
 
-Suite Setup      Open The Synapse Analyst Url
+Suite Setup      Open The Synapse Analyst Url    ${URL.${env}}
 Test Setup       Go To Home Page
 Test Teardown    Stop Test Case Recording
 Suite Teardown   Close Browser
@@ -19,7 +19,7 @@ LPI_001_Verify user should able to see "Link Incident" button in people preview 
     Click On People To Open the Preview Page
     Verify Link/Unlink Button Is not Visible on the People Preview Page when the feature flag is off
 
-LPI_002_Verify user should able to see "Add Incident" button in people preview page when ff is on
+LPI_002_Verify user should able to see Add Incident button in people preview page when ff is on
     [Documentation]    Verify user should be able to see "Add Incident" button in people preview page when ff is on
     [Tags]    LPI_WhenFFisOn
     Navigate to People Dashboard Page and Verify the People data is loaded
@@ -115,8 +115,8 @@ LPI_017_Verify user able to view people(Victim) linked to incident in incident d
     Go to Involved Entities Tab and verify the linked victim presence
 
 LPI_018_verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page
-    [Documentation]    verify user should able to unlink incident from people preview page(suspect)  and verify it in incident detail page
-    [Tags]    LPI_UnlinkIncidentFromPeople
+    [Documentation]    verify user should able to unlink incident from people preview page(suspect) and verify it in incident detail page
+    [Tags]    LPI_UnlinkIncidentFromPeopleSuspect
     Navigate to People Dashboard Page and Verify the People data is loaded
     Click On People To Open the Preview Page
     Extract the person name which has to be unliked from people preview page
@@ -140,7 +140,7 @@ LPI_019_verify user should able to unlink incident from people preview page(witn
     Navigate to Search Module and search for the unlinked people incident
     Go to Involved Entities Tab and verify the linked witness absence
 
-LPI_020_verify user should able to unlink incident from people preview page(victim) and verify it in incident detail page
+LPI_020_verify user should able to unlink incident from people preview page(victim) and verify it in incident detail page git wala
     [Documentation]    verify user should able to unlink incident from people preview page(victim)  and verify it in incident detail page
     [Tags]    LPI_UnlinkIncidentFromPeopleVictim
     Navigate to People dahsboard page and verify the victim data is loaded
