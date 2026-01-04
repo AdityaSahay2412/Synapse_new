@@ -6,7 +6,7 @@ Resource    ../Resources/Keywords/WidgetExportKeywords.robot
 
 
 
-Suite Setup      Open The Synapse Analyst Url
+Suite Setup      Open The Synapse Analyst Url    ${URL.${env}}
 Test Setup       Go To Home Page
 Test Teardown    Stop Test Case Recording
 Suite Teardown   Close Browser

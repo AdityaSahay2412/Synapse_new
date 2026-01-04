@@ -9,7 +9,7 @@ Library  ../MyLibrary.py
 #Library  ../ScreenRecorder.py
 Library    Process
 Library    BuiltIn
-#Library    ScreenCapLibrary
+Library    ScreenCapLibrary
 #Library    ScreenCapLibrary   screenshot_module=PyGTK    # PtGTK is used for jenkins as display is virtual
 Resource   ../Variables.robot
 Resource   LoginKeywords.robot
