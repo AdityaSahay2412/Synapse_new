@@ -17,7 +17,7 @@ pipeline {
                     steps {
                         bat '''
                         call venv\\Scripts\\activate
-                        python -m robot -d Results\\DataComparison Tests\\SharedDataComparisonTestSuite.robot
+                        python -m robot -d Results\\Dashboard Tests\\DashboardTestSuite.robot
                         '''
                     }
                 }
