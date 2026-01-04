@@ -2,36 +2,26 @@ pipeline {
     agent any
 
     stages {
+        stage('Run Robot Suites in Parallel') {
+            parallel {
+                stage('Link Incident Suite') {
+                    steps {
+                        bat '''
+                        call venv\\Scripts\\activate
+                        python -m robot -d Results\\LinkIncident Tests\\LinkIncidentToPeopleTestSuite.robot
+                        '''
+                    }
+                }
 
-        stage('Checkout') {
-            steps {
-                checkout scm
+                stage('Data comparison Suite') {
+                    steps {
+                        bat '''
+                        call venv\\Scripts\\activate
+                        python -m robot -d Results\\Dashboard Tests\\DashboardTestSuite.robot
+                        '''
+                    }
+                }
             }
-        }
-
-        stage('Run Robot Suite') {
-            steps {
-                bat '''
-                cd "%WORKSPACE%"
-                call venv\\Scripts\\activate
-                python -m robot -d Results Tests\\LinkIncidentToPeopleTestSuite.robot
-                '''
-            }
-        }
-    }
-
-    post {
-        always {
-            robot outputPath: 'Results'
-            archiveArtifacts artifacts: 'Results/**', fingerprint: true
-        }
-
-        failure {
-            echo 'Robot tests failed'
-        }
-
-        success {
-            echo 'Robot tests passed'
         }
     }
 }
