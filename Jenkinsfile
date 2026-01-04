@@ -13,7 +13,7 @@ pipeline {
                     }
                 }
 
-                stage('Login Suite') {
+                stage('Data comaparison Suite') {
                     steps {
                         bat '''
                         call venv\\Scripts\\activate
