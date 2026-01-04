@@ -13,7 +13,7 @@ pipeline {
                     }
                 }
 
-                stage('Data comparison Suite') {
+                stage('Dashboard Suite') {
                     steps {
                         bat '''
                         call venv\\Scripts\\activate
